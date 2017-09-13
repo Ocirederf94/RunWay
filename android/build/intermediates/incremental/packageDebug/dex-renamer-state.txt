@@ -1,0 +1,7 @@
+#Sun Sep 10 11:59:03 CEST 2017
+base.0=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_80b8bc57aecc99471931cd47aeb50759ac934af2
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_da05cb6b0edaecae1caa9f83d2a59411f5da17b4\\classes.dex
+base.1=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_da05cb6b0edaecae1caa9f83d2a59411f5da17b4
+file.0=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_80b8bc57aecc99471931cd47aeb50759ac934af2\\classes.dex

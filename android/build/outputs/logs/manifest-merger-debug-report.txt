@@ -1,0 +1,123 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:2:1-34:12
+	package
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:3:5-29
+		INJECTED from D:\Projects\Git\RunWay\android\AndroidManifest.xml
+		INJECTED from D:\Projects\Git\RunWay\android\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Projects\Git\RunWay\android\AndroidManifest.xml
+		INJECTED from D:\Projects\Git\RunWay\android\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\Projects\Git\RunWay\android\AndroidManifest.xml
+		INJECTED from D:\Projects\Git\RunWay\android\AndroidManifest.xml
+uses-sdk
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:5:5-7:41
+MERGED from [de.tomgrill.gdxfacebook:gdx-facebook-android:1.4.1] C:\Users\fredy\.android\build-cache\ce9935982bb53195092183c2c31a7009b7ec4811\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\fredy\.android\build-cache\e220ffcd209bc918502f8ef732c3c36833e6090a\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.0.0] C:\Users\fredy\.android\build-cache\196c0c0571a146353617b4be848ab7091b2af8d9\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.0.0] C:\Users\fredy\.android\build-cache\f8c07fba87089573f2fce762472804ed35f7e850\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.0] C:\Users\fredy\.android\build-cache\d505c5237ecd7f280b492dacda0fcbe8d159ebf2\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.0.0] C:\Users\fredy\.android\build-cache\e7ac641fc78ce902625859055fdb2593700af453\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.0.0] C:\Users\fredy\.android\build-cache\32e2f13c7bd6d480512405e716e1343228cd6211\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\fredy\.android\build-cache\253a2e48eaca43840c5d0ea1d798f3edda89bc65\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.0] C:\Users\fredy\.android\build-cache\67a94aece23a375c657b9c6a13f8fae02ec252c7\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\fredy\.android\build-cache\4d517ccaa9bc9366cb8bcbbbcd8132cfa3e9532d\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.0.0] C:\Users\fredy\.android\build-cache\d7e7e208157e8ef5d340dd63b0c55390321b5781\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:25.0.0] C:\Users\fredy\.android\build-cache\d5d796af8091ec781f5f9679264357041868cff1\output\AndroidManifest.xml:21:5-23:58
+MERGED from [de.tomgrill.gdxdialogs:gdx-dialogs-android:1.2.1] C:\Users\fredy\.android\build-cache\6c29a58f2dbde110c31c520fe98871b71b91cacf\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\fredy\.android\build-cache\2bbff01e153e90eca1d09cd598afafc012bde215\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.0.0] C:\Users\fredy\.android\build-cache\e220ffcd209bc918502f8ef732c3c36833e6090a\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:7:9-38
+		INJECTED from D:\Projects\Git\RunWay\android\AndroidManifest.xml
+		INJECTED from D:\Projects\Git\RunWay\android\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:6:9-35
+		INJECTED from D:\Projects\Git\RunWay\android\AndroidManifest.xml
+		INJECTED from D:\Projects\Git\RunWay\android\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:10:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:11:22-77
+application
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:13:5-32:19
+MERGED from [de.tomgrill.gdxfacebook:gdx-facebook-android:1.4.1] C:\Users\fredy\.android\build-cache\ce9935982bb53195092183c2c31a7009b7ec4811\output\AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:28:5-38:19
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\fredy\.android\build-cache\e220ffcd209bc918502f8ef732c3c36833e6090a\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.0] C:\Users\fredy\.android\build-cache\196c0c0571a146353617b4be848ab7091b2af8d9\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.0] C:\Users\fredy\.android\build-cache\f8c07fba87089573f2fce762472804ed35f7e850\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.0] C:\Users\fredy\.android\build-cache\d505c5237ecd7f280b492dacda0fcbe8d159ebf2\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.0] C:\Users\fredy\.android\build-cache\e7ac641fc78ce902625859055fdb2593700af453\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.0] C:\Users\fredy\.android\build-cache\32e2f13c7bd6d480512405e716e1343228cd6211\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\fredy\.android\build-cache\253a2e48eaca43840c5d0ea1d798f3edda89bc65\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.0] C:\Users\fredy\.android\build-cache\67a94aece23a375c657b9c6a13f8fae02ec252c7\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\fredy\.android\build-cache\4d517ccaa9bc9366cb8bcbbbcd8132cfa3e9532d\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:customtabs:25.0.0] C:\Users\fredy\.android\build-cache\d7e7e208157e8ef5d340dd63b0c55390321b5781\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-compat:25.0.0] C:\Users\fredy\.android\build-cache\d5d796af8091ec781f5f9679264357041868cff1\output\AndroidManifest.xml:25:5-20
+MERGED from [de.tomgrill.gdxdialogs:gdx-dialogs-android:1.2.1] C:\Users\fredy\.android\build-cache\6c29a58f2dbde110c31c520fe98871b71b91cacf\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\fredy\.android\build-cache\2bbff01e153e90eca1d09cd598afafc012bde215\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:16:9-41
+	android:allowBackup
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:14:9-35
+	android:icon
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:15:9-45
+	android:theme
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:17:9-40
+activity#com.mygdx.game.LaunchActivity
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:18:9-28:20
+	android:screenOrientation
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:22:13-49
+	android:label
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:21:13-58
+	android:configChanges
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:20:13-83
+	android:name
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:19:13-43
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:23:13-27:29
+action#android.intent.action.MAIN
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:26:27-74
+activity#com.mygdx.game.AndroidLauncher
+ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:29:9-31:48
+	android:label
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:31:13-45
+	android:name
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:30:13-44
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:29:9-32:66
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:33:9-36:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:34:13-58
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:37:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\AndroidManifest.xml:37:19-68
