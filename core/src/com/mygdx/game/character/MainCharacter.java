@@ -3,6 +3,7 @@ package com.mygdx.game.character;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.physics.box2d.Shape;
+import com.mygdx.game.character.controllers.MovementController;
 import com.mygdx.game.constants.GameConstants;
 
 /**
@@ -13,10 +14,12 @@ public class MainCharacter extends Shape {
     private ShapeRenderer shapeRenderer;
     private CharacterPosition characterPosition;
     private MainCharacterCamera mainCharacterCamera;
+    private MovementController movementController;
     private int widthPosition, heightPosition;
 
     private void setCharacterPositionCamera(){
         characterPosition = new CharacterPosition(widthPosition, heightPosition);
+        movementController = new MovementController(30f, MovementController.setTouchpadStyle());
         mainCharacterCamera.setCameraOnPlayer();
     }
 

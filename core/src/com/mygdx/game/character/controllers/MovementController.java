@@ -18,7 +18,7 @@ public class MovementController extends Touchpad {
     }
 
 
-    private static TouchpadStyle setTouchpadStyle() {
+    public static TouchpadStyle setTouchpadStyle() {
         touchPadSkin = new Skin();
         touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_BACKGROUDN_IMAGE));
         touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_KNOB_BACKGROUDN_IMAGE));
