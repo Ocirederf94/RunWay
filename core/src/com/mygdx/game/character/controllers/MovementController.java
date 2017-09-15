@@ -13,8 +13,8 @@ public class MovementController extends Touchpad {
     private static Skin touchPadSkin;
     private static TouchpadStyle touchpadStyle;
 
-    public MovementController(float deadzoneRadius, TouchpadStyle style) {
-        super(deadzoneRadius, setTouchpadStyle());
+    public MovementController() {
+        super(30f, setTouchpadStyle());
     }
 
 

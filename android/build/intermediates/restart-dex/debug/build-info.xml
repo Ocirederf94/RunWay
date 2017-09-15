@@ -6,36 +6,30 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1505415512065"
+    timestamp="1505511453999"
     token="-5578043556208834988"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="5063" />
+        duration="606" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="393" />
+        duration="15" />
     <task
         name="verifier"
-        duration="65" />
+        duration="16" />
 
-    <artifact
-        location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
     <artifact
         location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
-    <artifact
-        location="D:\Projects\Git\RunWay\android\build\outputs\apk\android-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1505414326592"
+        timestamp="1505510404308"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -76,17 +70,27 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1505415512065"
+        timestamp="1505511083129"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1505511231033"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1505511453999"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
-        <artifact
-            location="D:\Projects\Git\RunWay\android\build\outputs\apk\android-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

@@ -1,6 +1,7 @@
 package com.mygdx.game.character;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.physics.box2d.Shape;
 import com.mygdx.game.character.controllers.MovementController;
@@ -19,7 +20,7 @@ public class MainCharacter extends Shape {
 
     private void setCharacterPositionCamera(){
         characterPosition = new CharacterPosition(widthPosition, heightPosition);
-        movementController = new MovementController(30f, MovementController.setTouchpadStyle());
+        movementController = new MovementController();
         mainCharacterCamera.setCameraOnPlayer();
     }
 
@@ -30,11 +31,12 @@ public class MainCharacter extends Shape {
         heightPosition = height / GameConstants.INT_TWO;
     }
 
-    public void renderCharacter(){
+    public void renderCharacter(SpriteBatch spriteBatch){
         shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
         shapeRenderer.setColor(Color.RED);
         shapeRenderer.circle(widthPosition, heightPosition, GameConstants.CHARACTER_RADIUS);
         setCharacterPositionCamera();
+       // movementController.draw(spriteBatch, 0f);
         shapeRenderer.end();
     }
 
