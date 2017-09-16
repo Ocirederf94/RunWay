@@ -1,6 +1,9 @@
 package com.mygdx.game.character.controllers;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
 import com.mygdx.game.constants.GameConstants;
@@ -14,7 +17,17 @@ public class MovementController extends Touchpad {
     private static TouchpadStyle touchpadStyle;
 
     public MovementController() {
-        super(30f, setTouchpadStyle());
+        super(10f, setTouchpadStyle());
+    }
+
+    public void renderMovementController(SpriteBatch spriteBatch, Stage stage){
+        spriteBatch.begin();
+        this.clipBegin();
+        this.draw(spriteBatch, 0f);
+        this.clipEnd();
+        spriteBatch.end();
+        stage.act(Gdx.graphics.getDeltaTime());
+        stage.draw();
     }
 
 

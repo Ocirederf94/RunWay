@@ -3,10 +3,10 @@ package com.mygdx.game.views;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.mygdx.game.character.MainCharacter;
+import com.mygdx.game.character.controllers.MovementController;
 import com.mygdx.game.constants.GameConstants;
 
 /**
@@ -15,26 +15,33 @@ import com.mygdx.game.constants.GameConstants;
 
 public class MainView extends Stage {
     private Texture backgroundTexture;
-    private SpriteBatch spriteBatch;
+    private SpriteBatch backgroundSpriteBatch;
+    private SpriteBatch movementControllerSpriteBatch;
     private MainCharacter mainCharacter;
-    private Batch batch;
+    private MovementController movementController;
 
     public MainView() {
-        spriteBatch = new SpriteBatch();
+        backgroundSpriteBatch = new SpriteBatch();
+        movementControllerSpriteBatch = new SpriteBatch();
         backgroundTexture = new Texture(GameConstants.MAIN_VIEW_BACKGROUND);
         mainCharacter = new MainCharacter(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        movementController = new MovementController();
+        this.addActor(movementController);
+        Gdx.input.setInputProcessor(this);
     }
 
     public void toRender() {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        spriteBatch.begin();
-        spriteBatch.draw(backgroundTexture, GameConstants.INT_ZERO, GameConstants.INT_ZERO, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-        spriteBatch.end();
-        mainCharacter.renderCharacter(spriteBatch);
+        backgroundSpriteBatch.begin();
+        backgroundSpriteBatch.draw(backgroundTexture, GameConstants.INT_ZERO, GameConstants.INT_ZERO, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        backgroundSpriteBatch.end();
+        mainCharacter.renderCharacter();
+        movementController.renderMovementController(movementControllerSpriteBatch, this);
     }
 
     public void toDispose(){
-        spriteBatch.dispose();
+        backgroundSpriteBatch.dispose();
         mainCharacter.disposeCharacterObjects();
+        movementControllerSpriteBatch.dispose();
     }
 }
