@@ -16,13 +16,11 @@ import com.mygdx.game.constants.GameConstants;
 public class MainView extends Stage {
     private Texture backgroundTexture;
     private SpriteBatch backgroundSpriteBatch;
-    private SpriteBatch movementControllerSpriteBatch;
     private MainCharacter mainCharacter;
     private MovementController movementController;
 
     public MainView() {
         backgroundSpriteBatch = new SpriteBatch();
-        movementControllerSpriteBatch = new SpriteBatch();
         backgroundTexture = new Texture(GameConstants.MAIN_VIEW_BACKGROUND);
         mainCharacter = new MainCharacter(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         movementController = new MovementController();
@@ -36,12 +34,12 @@ public class MainView extends Stage {
         backgroundSpriteBatch.draw(backgroundTexture, GameConstants.INT_ZERO, GameConstants.INT_ZERO, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         backgroundSpriteBatch.end();
         mainCharacter.renderCharacter();
-        movementController.renderMovementController(movementControllerSpriteBatch, this);
+        movementController.renderMovementController(this);
     }
 
     public void toDispose(){
         backgroundSpriteBatch.dispose();
         mainCharacter.disposeCharacterObjects();
-        movementControllerSpriteBatch.dispose();
+        this.dispose();
     }
 }

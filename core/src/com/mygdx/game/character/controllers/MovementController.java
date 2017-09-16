@@ -20,18 +20,13 @@ public class MovementController extends Touchpad {
         super(10f, setTouchpadStyle());
     }
 
-    public void renderMovementController(SpriteBatch spriteBatch, Stage stage){
-        spriteBatch.begin();
-        this.clipBegin();
-        this.draw(spriteBatch, 0f);
-        this.clipEnd();
-        spriteBatch.end();
+    public void renderMovementController(Stage stage){
         stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
 
 
-    public static TouchpadStyle setTouchpadStyle() {
+    private static TouchpadStyle setTouchpadStyle() {
         touchPadSkin = new Skin();
         touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_BACKGROUDN_IMAGE));
         touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_KNOB_BACKGROUDN_IMAGE));
