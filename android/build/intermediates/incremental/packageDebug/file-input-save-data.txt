@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Sep 16 18:09:12 CEST 2017
+#Sat Sep 16 22:57:33 CEST 2017
 210.set=ANDROID_RESOURCE
 282.file=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png
 14.set=ANDROID_RESOURCE

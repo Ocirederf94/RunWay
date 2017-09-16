@@ -82,7 +82,7 @@ ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:18:9-28:20
 	android:screenOrientation
 		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:22:13-49
 	android:label
-		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:21:13-58
+		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:21:13-45
 	android:configChanges
 		ADDED from D:\Projects\Git\RunWay\android\AndroidManifest.xml:20:13-83
 	android:name
