@@ -35,6 +35,7 @@ public class MainView extends Stage {
         backgroundSpriteBatch.end();
         mainCharacter.renderCharacter();
         movementController.renderMovementController(this);
+        movementController.moveMainCharacter(mainCharacter);
     }
 
     public void toDispose(){

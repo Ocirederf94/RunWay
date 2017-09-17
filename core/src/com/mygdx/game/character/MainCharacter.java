@@ -1,12 +1,8 @@
 package com.mygdx.game.character;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.ai.Logger;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.physics.box2d.Shape;
-import com.mygdx.game.character.controllers.MovementController;
 import com.mygdx.game.constants.GameConstants;
 
 
@@ -16,7 +12,6 @@ import com.mygdx.game.constants.GameConstants;
  */
 
 public class MainCharacter extends Shape {
-    private SpriteBatch spriteBatch;
     private ShapeRenderer shapeRenderer;
     private CharacterPosition characterPosition;
     private MainCharacterCamera mainCharacterCamera;
@@ -30,7 +25,6 @@ public class MainCharacter extends Shape {
     public MainCharacter(int width, int height ) {
         shapeRenderer = new ShapeRenderer();
         mainCharacterCamera = new MainCharacterCamera(this);
-        spriteBatch = new SpriteBatch();
         widthPosition = width / GameConstants.INT_TWO;
         heightPosition = height / GameConstants.INT_TWO;
     }

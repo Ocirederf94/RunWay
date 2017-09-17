@@ -1,4 +1,4 @@
-#Sat Sep 16 22:52:51 CEST 2017
+#Sun Sep 17 12:55:59 CEST 2017
 base.0=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4
 renamed.0=classes.dex
 file.0=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4\\classes.dex
