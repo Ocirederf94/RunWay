@@ -19,18 +19,18 @@ public class DirectionController extends Touchpad {
 
     private static TouchpadStyle setTouchpadStyle() {
         touchPadSkin = new Skin();
-        touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_DIRECTION_BACKGROUDN_IMAGE));
-        touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUDN_IMAGE));
+        touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_DIRECTION_BACKGROUND_IMAGE));
+        touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND_IMAGE));
 
         touchpadStyle = new TouchpadStyle();
-        touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__BACKGROUDN);
-        touchpadStyle.knob = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUDN);
+        touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__BACKGROUND);
+        touchpadStyle.knob = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND);
         return touchpadStyle;
     }
 
 
     public DirectionController() {
-        super(0f, setTouchpadStyle());
+        super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
     }
 
     public void renderMovementController(Stage stage){
