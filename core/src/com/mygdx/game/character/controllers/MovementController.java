@@ -19,18 +19,18 @@ public class MovementController extends Touchpad {
 
     private static TouchpadStyle setTouchpadStyle() {
         touchPadSkin = new Skin();
-        touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_BACKGROUDN_IMAGE));
-        touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_KNOB_BACKGROUDN_IMAGE));
+        touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_BACKGROUND_IMAGE));
+        touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_KNOB_BACKGROUND_IMAGE));
 
         touchpadStyle = new TouchpadStyle();
-        touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_BACKGROUDN);
-        touchpadStyle.knob = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_KNOB_BACKGROUDN);
+        touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_BACKGROUND);
+        touchpadStyle.knob = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_KNOB_BACKGROUND);
         return touchpadStyle;
     }
 
 
     public MovementController() {
-        super(10f, setTouchpadStyle());
+        super(GameConstants.MOVEMENT_TOUCHPAD_DEADZONE_RADIUS, setTouchpadStyle());
     }
 
     public void renderMovementController(Stage stage){
