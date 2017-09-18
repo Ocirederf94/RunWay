@@ -3,6 +3,7 @@ package com.mygdx.game.character.controllers;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
@@ -19,8 +20,8 @@ public class MovementController extends Touchpad {
 
     private static TouchpadStyle setTouchpadStyle() {
         touchPadSkin = new Skin();
-        touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_BACKGROUND_IMAGE));
-        touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_KNOB_BACKGROUND_IMAGE));
+        touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUND, new Texture(GameConstants.TOUCHPAD_BACKGROUND_IMAGE));
+        touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUND, new Texture(GameConstants.TOUCHPAD_KNOB_BACKGROUND_IMAGE));
 
         touchpadStyle = new TouchpadStyle();
         touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_BACKGROUND);
@@ -38,11 +39,8 @@ public class MovementController extends Touchpad {
         stage.draw();
     }
 
-    public void moveMainCharacter(MainCharacter mainCharacter){
-        /*
-        mainCharacter.setX(mainCharacter.getX() + this.getKnobPercentX() * GameConstants.CHARACTER_VELOCITY);
-        mainCharacter.setY(mainCharacter.getY() + this.getKnobPercentY() * GameConstants.CHARACTER_VELOCITY);
-        */  
+    public void moveMainCharacter(ShapeRenderer shapeRenderer){
+        shapeRenderer.translate(this.getKnobPercentX(),this.getKnobPercentY(), 0 );
     }
 
     @Override

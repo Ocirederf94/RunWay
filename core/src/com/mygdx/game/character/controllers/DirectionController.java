@@ -3,6 +3,7 @@ package com.mygdx.game.character.controllers;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
@@ -19,8 +20,8 @@ public class DirectionController extends Touchpad {
 
     private static TouchpadStyle setTouchpadStyle() {
         touchPadSkin = new Skin();
-        touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_DIRECTION_BACKGROUND_IMAGE));
-        touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUDN, new Texture(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND_IMAGE));
+        touchPadSkin.add(GameConstants.TOUCHPAD_DIRECTION__BACKGROUND, new Texture(GameConstants.TOUCHPAD_DIRECTION_BACKGROUND_IMAGE));
+        touchPadSkin.add(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND, new Texture(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND_IMAGE));
 
         touchpadStyle = new TouchpadStyle();
         touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__BACKGROUND);
@@ -38,7 +39,7 @@ public class DirectionController extends Touchpad {
         stage.draw();
     }
 
-    public void directMainCharacter(MainCharacter mainCharacter){
+    public void directMainCharacter(ShapeRenderer shapeRenderer){
 
     }
 

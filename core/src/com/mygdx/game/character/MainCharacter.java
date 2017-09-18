@@ -2,6 +2,7 @@ package com.mygdx.game.character;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.physics.box2d.CircleShape;
 import com.badlogic.gdx.physics.box2d.Shape;
 import com.mygdx.game.constants.GameConstants;
 
@@ -50,4 +51,9 @@ public class MainCharacter extends Shape {
     public Type getType() {
         return null;
     }
+
+    public ShapeRenderer getShape(){
+        return shapeRenderer;
+    }
+
 }
