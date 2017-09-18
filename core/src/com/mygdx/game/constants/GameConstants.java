@@ -20,7 +20,9 @@ public class GameConstants {
 
     public static final int INT_ZERO = 0;
     public static final int INT_TWO = 2;
-    public static final int CHARACTER_RADIUS = 50;
+    public static final int CHARACTER_RADIUS = 25;
+    
     public static final float MOVEMENT_TOUCHPAD_DEADZONE_RADIUS = 150.0;
+    public static final float DIRECTION_KNOB_DEADZONE_RADIUS = 0.0;
 
 }
