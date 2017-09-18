@@ -39,7 +39,10 @@ public class MovementController extends Touchpad {
     }
 
     public void moveMainCharacter(MainCharacter mainCharacter){
-
+        /*
+        mainCharacter.setX(mainCharacter.getX() + this.getKnobPercentX() * GameConstants.CHARACTER_VELOCITY);
+        mainCharacter.setY(mainCharacter.getY() + this.getKnobPercentY() * GameConstants.CHARACTER_VELOCITY);
+        */  
     }
 
     @Override
