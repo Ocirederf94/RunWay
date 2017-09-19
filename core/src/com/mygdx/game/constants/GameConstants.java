@@ -23,4 +23,5 @@ public class GameConstants {
     public static final float MOVEMENT_TOUCHPAD_DEADZONE_RADIUS = 0f;
     public static final float DIRECTION_KNOB_DEADZONE_RADIUS = 0f;
     public static final float CHARACTER_VELOCITY = 5f;
+    public static final float MOVEMENT_TOUCHPAD_Z_POSITION = 0f;
 }
