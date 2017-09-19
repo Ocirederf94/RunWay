@@ -1,6 +1,7 @@
 package com.mygdx.game.character.controllers;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -15,8 +16,10 @@ import com.mygdx.game.constants.GameConstants;
  */
 
 public class MovementController extends Touchpad {
+    private Stage stage;
     private static Skin touchPadSkin;
     private static TouchpadStyle touchpadStyle;
+    private InputProcessor inputProcessor;
 
     private static TouchpadStyle setTouchpadStyle() {
         touchPadSkin = new Skin();
@@ -32,16 +35,27 @@ public class MovementController extends Touchpad {
 
     public MovementController() {
         super(GameConstants.MOVEMENT_TOUCHPAD_DEADZONE_RADIUS, setTouchpadStyle());
+        stage = new Stage();
+        inputProcessor = stage;
     }
 
-    public void renderMovementController(Stage stage){
+    public void renderMovementController(){
+        stage.addActor(this);
         stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
 
     public void moveMainCharacter(MainCharacter mainCharacter){
-        mainCharacter.getShape().translate(this.getKnobPercentX(), this.getKnobPercentY(), GameConstants.MOVEMENT_TOUCHPAD_Z_POSITION);
         mainCharacter.getMainCharacterCamera().updateCameraOnPlayer(this.getKnobPercentX(), this.getKnobPercentY());
+        mainCharacter.getShape().translate(this.getKnobPercentX(), this.getKnobPercentY(), GameConstants.MOVEMENT_TOUCHPAD_Z_POSITION);
+    }
+
+    public InputProcessor getInputProcessor(){
+        return inputProcessor;
+    }
+
+    public void disposeStage(){
+        stage.dispose();
     }
 
     @Override

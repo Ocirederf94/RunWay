@@ -28,7 +28,7 @@ public class MainCharacter extends Shape {
         shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
         shapeRenderer.setColor(Color.RED);
         shapeRenderer.circle(widthPosition, heightPosition, GameConstants.CHARACTER_RADIUS);
-        mainCharacterCamera.setCameraOnPlayer(x, y);
+        mainCharacterCamera.setCameraOnPlayer(widthPosition, heightPosition);
         shapeRenderer.end();
     }
 

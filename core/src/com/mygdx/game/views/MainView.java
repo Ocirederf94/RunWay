@@ -1,6 +1,8 @@
 package com.mygdx.game.views;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputMultiplexer;
+import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -14,12 +16,17 @@ import com.mygdx.game.constants.GameConstants;
  * Created by fredy on 08/09/2017.
  */
 
-public class MainView extends Stage {
+public class MainView{
     private Texture backgroundTexture;
     private SpriteBatch backgroundSpriteBatch;
     private MainCharacter mainCharacter;
     private MovementController movementController;
     private DirectionController directionController;
+    private InputMultiplexer inputMultiplexer;
+
+    private void addInputProcessorsToInputMultiplexer(InputProcessor inputProcessor){
+        inputMultiplexer.addProcessor(inputProcessor);
+    }
 
     public MainView() {
         backgroundSpriteBatch = new SpriteBatch();
@@ -27,8 +34,9 @@ public class MainView extends Stage {
         mainCharacter = new MainCharacter(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         movementController = new MovementController();
         directionController = new DirectionController();
-        this.addActor(movementController);
-        Gdx.input.setInputProcessor(this);
+        inputMultiplexer = new InputMultiplexer();
+        addInputProcessorsToInputMultiplexer(directionController.getInputProcessor());
+        addInputProcessorsToInputMultiplexer(movementController.getInputProcessor());
     }
 
     public void toRender() {
@@ -37,15 +45,19 @@ public class MainView extends Stage {
         backgroundSpriteBatch.draw(backgroundTexture, GameConstants.INT_ZERO, GameConstants.INT_ZERO, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         backgroundSpriteBatch.end();
         mainCharacter.renderCharacter();
-        movementController.renderMovementController(this);
+        movementController.renderMovementController();
         directionController.renderdirectionController();
         movementController.moveMainCharacter(mainCharacter);
-        renderdirectionController.directMainCharacter(mainCharacter);
+        directionController.directMainCharacter(mainCharacter);
+        Gdx.input.setInputProcessor(inputMultiplexer);
     }
 
     public void toDispose(){
         backgroundSpriteBatch.dispose();
         mainCharacter.disposeCharacterObjects();
-        this.dispose();
+        movementController.disposeStage();
+        directionController.disposeStage();
     }
+
+
 }

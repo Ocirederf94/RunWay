@@ -17,9 +17,9 @@ public class MainCharacterCamera extends OrthographicCamera {
         this.update();
     }
     
-     public void updateCameraOnPlayer(int x, int y){
-        this.position.x += x;
-        this.position.y += y;
+     public void updateCameraOnPlayer(float x, float y){
+        this.position.x = x;
+        this.position.y = y;
         this.update();
     }
 }
