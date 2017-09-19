@@ -18,11 +18,6 @@ public class MainCharacter extends Shape {
     private MainCharacterCamera mainCharacterCamera;
     private int widthPosition, heightPosition;
 
-    private void setCharacterPositionCamera(){
-        characterPosition = new CharacterPosition(widthPosition, heightPosition);
-        mainCharacterCamera.setCameraOnPlayer();
-    }
-
     public MainCharacter(int width, int height ) {
         shapeRenderer = new ShapeRenderer();
         mainCharacterCamera = new MainCharacterCamera(this);
@@ -34,12 +29,18 @@ public class MainCharacter extends Shape {
         shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
         shapeRenderer.setColor(Color.RED);
         shapeRenderer.circle(widthPosition, heightPosition, GameConstants.CHARACTER_RADIUS);
-        setCharacterPositionCamera();
+        this.setCharacterPositionOnCamera(widthPosition, heightPosition);
         shapeRenderer.end();
     }
 
     public void disposeCharacterObjects(){
         this.dispose();
+    }
+    
+    
+    public void setCharacterPositionOnCamera(int x, int y){
+        characterPosition = new CharacterPosition(x, y);
+        mainCharacterCamera.setCameraOnPlayer();
     }
 
     public CharacterPosition getMainCharacterPosition(){
@@ -55,5 +56,4 @@ public class MainCharacter extends Shape {
     public ShapeRenderer getShape(){
         return shapeRenderer;
     }
-
 }
