@@ -15,6 +15,7 @@ import com.mygdx.game.constants.GameConstants;
  */
 
 public class DirectionController extends Touchpad {
+    private Stage stage;
     private static Skin touchPadSkin;
     private static TouchpadStyle touchpadStyle;
 
@@ -32,15 +33,17 @@ public class DirectionController extends Touchpad {
 
     public DirectionController() {
         super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
+        this.stage = new Stage();
+        stage.addActor(this);
     }
 
-    public void renderMovementController(Stage stage){
+    public void renderdirectionController(){
         stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
 
-    public void directMainCharacter(ShapeRenderer shapeRenderer){
-
+    public void directMainCharacter(MainCharacter mainCharacter){
+        mainCharacter.getShape().rotate(this.getKnobX(), this.getKnobY(), 0f, 0f);
     }
 
     @Override
