@@ -14,7 +14,6 @@ import com.mygdx.game.constants.GameConstants;
 
 public class MainCharacter extends Shape {
     private ShapeRenderer shapeRenderer;
-    private CharacterPosition characterPosition;
     private MainCharacterCamera mainCharacterCamera;
     private int widthPosition, heightPosition;
 
@@ -39,14 +38,8 @@ public class MainCharacter extends Shape {
     
     
     public void setCharacterPositionOnCamera(int x, int y){
-        characterPosition = new CharacterPosition(x, y);
-        mainCharacterCamera.setCameraOnPlayer();
+        mainCharacterCamera.setCameraOnPlayer(x, y);
     }
-
-    public CharacterPosition getMainCharacterPosition(){
-        return characterPosition;
-    }
-
 
     @Override
     public Type getType() {
