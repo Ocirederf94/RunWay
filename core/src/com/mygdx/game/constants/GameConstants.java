@@ -10,7 +10,7 @@ public class GameConstants {
     public static final String TOUCHPAD_KNOB_BACKGROUND_IMAGE = "backgorund_images/touchKnob.png";
     public static final String TOUCHPAD_DIRECTION_BACKGROUND_IMAGE ="backgorund_images/directionTouchBackground.png";
     public static final String TOUCHPAD_DIRECTION__KNOB_BACKGROUND_IMAGE ="backgorund_images/directionTouchKnob.png";
-    public static final String CHARACTER_BACKGROUND ="backgorund_images/characterBackground.png";
+    public static final String MAIN_CHARACTER_BACKGROUND ="backgorund_images/characterBackground.png";
     
     public static final String TOUCHPAD_BACKGROUND = "touchBackground";
     public static final String TOUCHPAD_KNOB_BACKGROUND = "touchKnob";

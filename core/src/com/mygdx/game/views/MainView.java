@@ -28,6 +28,21 @@ public class MainView{
         inputMultiplexer.addProcessor(inputProcessor);
     }
 
+    private void setBackgroundTexture(){
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        backgroundSpriteBatch.begin();
+        backgroundSpriteBatch.draw(backgroundTexture, GameConstants.INT_ZERO, GameConstants.INT_ZERO, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        backgroundSpriteBatch.end();
+    }
+
+    private void setMainCharacter(){
+        mainCharacter.renderCharacter();
+        movementController.renderMovementController();
+        directionController.renderdirectionController();
+        movementController.moveMainCharacter(mainCharacter);
+        directionController.directMainCharacter(mainCharacter);
+    }
+
     public MainView() {
         backgroundSpriteBatch = new SpriteBatch();
         backgroundTexture = new Texture(GameConstants.MAIN_VIEW_BACKGROUND);
@@ -40,15 +55,8 @@ public class MainView{
     }
 
     public void toRender() {
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        backgroundSpriteBatch.begin();
-        backgroundSpriteBatch.draw(backgroundTexture, GameConstants.INT_ZERO, GameConstants.INT_ZERO, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-        backgroundSpriteBatch.end();
-        mainCharacter.renderCharacter();
-        movementController.renderMovementController();
-        directionController.renderdirectionController();
-        movementController.moveMainCharacter(mainCharacter);
-        directionController.directMainCharacter(mainCharacter);
+        setBackgroundTexture();
+        setMainCharacter();
         Gdx.input.setInputProcessor(inputMultiplexer);
     }
 

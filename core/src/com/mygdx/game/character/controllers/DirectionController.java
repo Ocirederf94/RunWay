@@ -47,7 +47,8 @@ public class DirectionController extends Touchpad {
     }
 
     public void directMainCharacter(MainCharacter mainCharacter){
-        mainCharacter.getShape().rotate(this.getKnobX(), this.getKnobY(), 0f, 0f);
+        mainCharacter.getSprite().rotate(this.getKnobPercentX());
+        mainCharacter.getSprite().rotate(this.getKnobPercentY());
     }
 
     public InputProcessor getInputProcessor(){

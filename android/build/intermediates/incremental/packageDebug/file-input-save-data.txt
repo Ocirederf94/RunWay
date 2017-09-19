@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Sep 19 21:14:29 CEST 2017
+#Tue Sep 19 22:28:00 CEST 2017
 210.set=ANDROID_RESOURCE
 282.file=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_screen_content_include.xml
 14.set=ANDROID_RESOURCE

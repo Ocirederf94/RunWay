@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Sep 19 21:14:27 CEST 2017
+#Tue Sep 19 22:27:59 CEST 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_xout.png
