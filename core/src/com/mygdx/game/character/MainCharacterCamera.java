@@ -7,16 +7,19 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
  */
 
 public class MainCharacterCamera extends OrthographicCamera {
-    private MainCharacter mainCharacter;
-
-    public MainCharacterCamera(MainCharacter mainCharacter){
+    public MainCharacterCamera(){
         super();
-        this.mainCharacter = mainCharacter;
     }
 
-    public void setCameraOnPlayer(){
-        this.position.x = mainCharacter.getMainCharacterPosition().getxPosition();
-        this.position.y = mainCharacter.getMainCharacterPosition().getyPosition();
+    public void setCameraOnPlayer(int x, int y){
+        this.position.x = x;
+        this.position.y = y;
+        this.update();
+    }
+    
+     public void updateCameraOnPlayer(int x, int y){
+        this.position.x += x;
+        this.position.y += y;
         this.update();
     }
 }
