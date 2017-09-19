@@ -39,8 +39,9 @@ public class MovementController extends Touchpad {
         stage.draw();
     }
 
-    public void moveMainCharacter(ShapeRenderer shapeRenderer){
-        shapeRenderer.translate(this.getKnobPercentX(),this.getKnobPercentY(), 0 );
+    public void moveMainCharacter(MainCharacter mainCharacter){
+        mainCharacter.getShape().translate(this.getKnobPercentX(),this.getKnobPercentY(), 0 );
+        mainCharacter.getMainCharacterCamera().updateCameraOnPlayer(this.getKnobPercentX(), this.getKnobPercentY());
     }
 
     @Override
