@@ -1,5 +1,6 @@
 package com.mygdx.game.character;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 
 /**
@@ -7,19 +8,19 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
  */
 
 public class MainCharacterCamera extends OrthographicCamera {
-    public MainCharacterCamera(){
-        super();
+    public MainCharacterCamera() {
+        super(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
     }
 
-    public void setCameraOnPlayer(int x, int y){
+    public void setCameraOnPlayer(float x, float y) {
         this.position.x = x;
         this.position.y = y;
         this.update();
     }
-    
-     public void updateCameraOnPlayer(float x, float y){
-        this.position.x = x;
-        this.position.y = y;
+
+    public void updateCameraOnPlayer(float x, float y) {
+        this.position.x += x;
+        this.position.y += y;
         this.update();
     }
 }

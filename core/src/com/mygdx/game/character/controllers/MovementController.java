@@ -39,23 +39,24 @@ public class MovementController extends Touchpad {
         inputProcessor = stage;
     }
 
-    public void renderMovementController(){
+    public void renderMovementController() {
         stage.addActor(this);
         stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
 
-    public void moveMainCharacter(MainCharacter mainCharacter){
-        //mainCharacter.getMainCharacterCamera().updateCameraOnPlayer(this.getKnobPercentX(), this.getKnobPercentY());
+    public void moveMainCharacter(MainCharacter mainCharacter) {
         mainCharacter.getSprite().translate(this.getKnobPercentX(), this.getKnobPercentY());
+        mainCharacter.getMainCharacterCamera().setCameraOnPlayer(mainCharacter.getSprite().getX(), mainCharacter.getSprite().getY());
 
+        Gdx.app.log(mainCharacter.getMainCharacterCamera().position.toString(), " my informative message " + mainCharacter.getSprite().getX() + " " + mainCharacter.getSprite().getY());
     }
 
-    public InputProcessor getInputProcessor(){
+    public InputProcessor getInputProcessor() {
         return inputProcessor;
     }
 
-    public void disposeStage(){
+    public void disposeStage() {
         stage.dispose();
     }
 

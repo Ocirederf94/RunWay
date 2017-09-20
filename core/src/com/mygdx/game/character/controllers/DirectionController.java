@@ -41,23 +41,23 @@ public class DirectionController extends Touchpad {
         inputProcessor = stage;
     }
 
-    public void renderdirectionController(){
+    public void renderdirectionController() {
         stage.addActor(this);
         stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
 
-    public void directMainCharacter(MainCharacter mainCharacter){
+    public void directMainCharacter(MainCharacter mainCharacter) {
         Vector2 vector2 = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
         float angle = vector2.angle();
         mainCharacter.getSprite().rotate(angle);
     }
 
-    public InputProcessor getInputProcessor(){
+    public InputProcessor getInputProcessor() {
         return inputProcessor;
     }
 
-    public void disposeStage(){
+    public void disposeStage() {
         stage.dispose();
     }
 

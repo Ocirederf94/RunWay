@@ -29,7 +29,7 @@ class CharacterPosition {
         this.xPosition = xPosition;
     }
 
-    public void setXYPosition(int xPosition, int yPosition){
+    public void setXYPosition(int xPosition, int yPosition) {
         this.xPosition = xPosition;
         this.yPosition = yPosition;
     }
