@@ -5,6 +5,7 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
@@ -47,8 +48,9 @@ public class DirectionController extends Touchpad {
     }
 
     public void directMainCharacter(MainCharacter mainCharacter){
-        mainCharacter.getSprite().rotate(this.getKnobPercentX());
-        mainCharacter.getSprite().rotate(this.getKnobPercentY());
+        Vector2 vector2 = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
+        float angle = vector2.angle();
+        mainCharacter.getSprite().rotate(angle);
     }
 
     public InputProcessor getInputProcessor(){
