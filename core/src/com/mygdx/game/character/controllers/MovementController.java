@@ -46,13 +46,10 @@ public class MovementController extends Touchpad {
     }
 
     public void moveMainCharacter(MainCharacter mainCharacter) {
-        //mainCharacter.getSprite().translate(this.getKnobPercentX(), this.getKnobPercentY());
-        //mainCharacter.getMainCharacterCamera().setCameraOnPlayer(mainCharacter.getSprite().getX(), mainCharacter.getSprite().getY());
-        
         mainCharacter.getMainCharacterCamera().translate(this.getKnobPercentX(), this.getKnobPercentY());
-        mainCharacter.getSprite().setPosition(mainCharacter.getMainCharacterCamera().position.x, mainCharacter.getMainCharacterCamera().position.y);
+        mainCharacter.getMainCharacterCamera().update();
 
-        Gdx.app.log(mainCharacter.getMainCharacterCamera().position.toString(), " my informative message " + mainCharacter.getSprite().getX() + " " + mainCharacter.getSprite().getY());
+        Gdx.app.log(mainCharacter.getMainCharacterCamera().position.toString(), " camera and character position " + mainCharacter.getSprite().getX() + " " + mainCharacter.getSprite().getY());
     }
 
     public InputProcessor getInputProcessor() {

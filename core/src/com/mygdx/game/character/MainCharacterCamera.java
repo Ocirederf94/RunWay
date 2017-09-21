@@ -10,7 +10,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 public class MainCharacterCamera extends OrthographicCamera {
     public MainCharacterCamera() {
         super();
-        this.setToOrtho(true);
+        this.setToOrtho(false);
     }
 
     public void setCameraOnPlayer(float x, float y) {

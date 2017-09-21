@@ -49,7 +49,7 @@ public class DirectionController extends Touchpad {
     }
 
     public void directMainCharacter(MainCharacter mainCharacter) {
-        //Vector2 vector2 = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
+        Vector2 vector2 = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
         double angle = Math.atan2(this.getKnobPercentX(), this.getKnobPercentY());
         mainCharacter.getSprite().rotate((float)angle);
     }

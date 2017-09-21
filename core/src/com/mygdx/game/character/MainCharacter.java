@@ -50,10 +50,6 @@ public class MainCharacter {
         return sprite;
     }
 
-    public SpriteBatch getSpriteBatch() {
-        return spriteBatch;
-    }
-
     public MainCharacterCamera getMainCharacterCamera() {
         return mainCharacterCamera;
     }
