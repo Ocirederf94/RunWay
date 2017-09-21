@@ -1,5 +1,6 @@
 package com.mygdx.game.character.controllers;
 
+import java.lang.Math;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
@@ -48,9 +49,9 @@ public class DirectionController extends Touchpad {
     }
 
     public void directMainCharacter(MainCharacter mainCharacter) {
-        Vector2 vector2 = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
-        float angle = vector2.angle();
-        mainCharacter.getSprite().rotate(angle);
+        //Vector2 vector2 = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
+        double angle = Math.atan2(this.getKnobPercentX(), this.getKnobPercentY());
+        mainCharacter.getSprite().rotate((float)angle);
     }
 
     public InputProcessor getInputProcessor() {
