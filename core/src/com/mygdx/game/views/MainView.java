@@ -26,7 +26,11 @@ public class MainView {
     private void addInputProcessorsToInputMultiplexer(InputProcessor inputProcessor) {
         inputMultiplexer.addProcessor(inputProcessor);
     }
-
+    
+    /**
+    * Setting background image and projection matrix, 
+    * so default sprite camera changes to MainCharacterCamera
+    */
     private void setBackgroundTexture() {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         backgroundSpriteBatch.setProjectionMatrix(mainCharacter.getMainCharacterCamera().combined);
