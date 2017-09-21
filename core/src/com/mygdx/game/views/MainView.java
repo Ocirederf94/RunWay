@@ -44,7 +44,6 @@ public class MainView {
         movementController.renderMovementController();
         directionController.renderdirectionController();
         movementController.moveMainCharacter(mainCharacter);
-        directionController.directMainCharacter(mainCharacter);
     }
 
     public MainView() {
@@ -52,7 +51,7 @@ public class MainView {
         backgroundTexture = new Texture(GameConstants.MAIN_VIEW_BACKGROUND);
         mainCharacter = new MainCharacter(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         movementController = new MovementController();
-        directionController = new DirectionController();
+        directionController = new DirectionController(mainCharacter);
         inputMultiplexer = new InputMultiplexer();
         addInputProcessorsToInputMultiplexer(directionController.getInputProcessor());
         addInputProcessorsToInputMultiplexer(movementController.getInputProcessor());

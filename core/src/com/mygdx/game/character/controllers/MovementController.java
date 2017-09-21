@@ -5,9 +5,13 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.Event;
+import com.badlogic.gdx.scenes.scene2d.EventListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
+import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.mygdx.game.character.MainCharacter;
 import com.mygdx.game.constants.GameConstants;
 
@@ -49,7 +53,7 @@ public class MovementController extends Touchpad {
         mainCharacter.getMainCharacterCamera().translate(this.getKnobPercentX(), this.getKnobPercentY());
         mainCharacter.getMainCharacterCamera().update();
 
-        Gdx.app.log(mainCharacter.getMainCharacterCamera().position.toString(), " camera and character position " + mainCharacter.getSprite().getX() + " " + mainCharacter.getSprite().getY());
+        //Gdx.app.log(mainCharacter.getMainCharacterCamera().position.toString(), " camera and character position " + mainCharacter.getSprite().getX() + " " + mainCharacter.getSprite().getY());
     }
 
     public InputProcessor getInputProcessor() {
