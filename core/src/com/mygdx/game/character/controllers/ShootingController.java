@@ -21,6 +21,14 @@ public class ShootingController extends ImageButton {
         return buttonSkin;
     }
 
+    private initShootingControllerListener(){
+          this.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                               
+            }
+        });
+    }
 
     public ShootingController(MovementController movementController, DirectionController directionController){
         super(initButtonSkin());
@@ -30,6 +38,7 @@ public class ShootingController extends ImageButton {
                                                  + directionController.getWidth()));
         stage = new Stage();
         inputProcessor = stage;
+        initShootingControllerListener();
     }
     
     public void renderShootingController(){
