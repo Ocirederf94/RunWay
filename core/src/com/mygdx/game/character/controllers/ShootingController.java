@@ -3,11 +3,14 @@ package com.mygdx.game.character.controllers;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.mygdx.game.constants.GameConstants;
 
 /**
@@ -17,12 +20,10 @@ import com.mygdx.game.constants.GameConstants;
 public class ShootingController extends ImageButton {
     private Stage stage;
     private InputProcessor inputProcessor;
-    private static Skin buttonSkin;
-    
-    private static Skin initButtonSkin(){
-        buttonSkin = new Skin();
-        buttonSkin.add(GameConstants.SHOOTING_CONTROLLER_BACKGROUND, new Texture(GameConstants.SHOOTING_CONTROLLER_BACKGROUND_IMAGE));
-        return buttonSkin;
+    private static Drawable drawable;
+
+    private static Drawable initButtonSkin(){
+        return drawable = new TextureRegionDrawable(new TextureRegion(new Texture(GameConstants.SHOOTING_CONTROLLER_BACKGROUND_IMAGE)));
     }
 
     private void initShootingControllerListener(){
@@ -37,6 +38,7 @@ public class ShootingController extends ImageButton {
     public ShootingController(MovementController movementController, DirectionController directionController){
         super(initButtonSkin());
         this.setX(movementController.getWidth() + GameConstants.GENERAL_SPACING);
+        this.setY(movementController.getHeight() - (this.getHeight() * GameConstants.FLOAT_ONE_FIVE));
         this.setWidth(Gdx.graphics.getWidth() - ((GameConstants.GENERAL_SPACING 
                                                  * GameConstants.INT_TWO) + movementController.getWidth() 
                                                  + directionController.getWidth()));

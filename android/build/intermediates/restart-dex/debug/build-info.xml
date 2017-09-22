@@ -6,26 +6,26 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1506097453844"
+    timestamp="1506101732850"
     token="-5578043556208834988"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="200" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="18" />
+        duration="0" />
     <task
         name="verifier"
-        duration="24" />
+        duration="0" />
 
     <artifact
-        location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
+        location="D:\Projects\Git\RunWay\android\build\outputs\apk\android-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -70,7 +70,15 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1506097374759"
+        timestamp="1506097732596"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1506097868509"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_2.apk"
@@ -78,11 +86,27 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1506097453844"
+        timestamp="1506099687283"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1506099780317"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1506101732850"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Projects\Git\RunWay\android\build\outputs\apk\android-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
