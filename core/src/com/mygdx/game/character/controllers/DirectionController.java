@@ -42,6 +42,7 @@ public class DirectionController extends Touchpad {
     }
 
     private float reverseAngle(){
+        // Vector2 v = new Vector2(this.getKnobX(), this.getKnobY());
         Vector2 v = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
         return v.angle();    
     }
@@ -53,16 +54,18 @@ public class DirectionController extends Touchpad {
             public void changed(ChangeEvent event, Actor actor) {
                 float deltaX = ((Touchpad) actor).getKnobX();
                 float deltaY = ((Touchpad) actor).getKnobY();
-
+                
+                mainCharacter.getSprite().setRotation(reverseAngle());
+                /*
                 degree = mainCharacter.getSprite().getRotation();
                 mainCharacter.getSprite().rotate(-degree);
-                // mainCharacter.getSprite().rotate(reverseAngle());
                 if (deltaX > 15f && deltaY < 150){ // bottom
                     mainCharacter.getSprite().rotate(getAngleX(deltaX));
                 }
                 else {
                    mainCharacter.getSprite().rotate(-getAngleX(deltaX));
                 }
+                */
                 Gdx.app.log("Kob x ", String.valueOf(getAngleX(deltaX)) + " and y " + String.valueOf(getKnobY()) + " " + mainCharacter.getSprite().getRotation());
             }
         });
