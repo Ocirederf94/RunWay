@@ -1,9 +1,13 @@
 package com.mygdx.game.character.controllers;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
-import com.badlogic.gdx.scenes.scene2d.ui.ImageButton
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.mygdx.game.constants.GameConstants;
 
 /**
@@ -13,15 +17,15 @@ import com.mygdx.game.constants.GameConstants;
 public class ShootingController extends ImageButton {
     private Stage stage;
     private InputProcessor inputProcessor;
-    private Skin buttonSkin;
+    private static Skin buttonSkin;
     
-    private Skin initButtonSkin(){
+    private static Skin initButtonSkin(){
         buttonSkin = new Skin();
         buttonSkin.add(GameConstants.SHOOTING_CONTROLLER_BACKGROUND, new Texture(GameConstants.SHOOTING_CONTROLLER_BACKGROUND_IMAGE));
         return buttonSkin;
     }
 
-    private initShootingControllerListener(){
+    private void initShootingControllerListener(){
           this.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {

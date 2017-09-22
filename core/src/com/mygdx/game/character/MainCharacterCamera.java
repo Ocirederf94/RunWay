@@ -1,6 +1,5 @@
 package com.mygdx.game.character;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 
 /**

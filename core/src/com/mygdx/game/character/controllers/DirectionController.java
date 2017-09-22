@@ -1,12 +1,8 @@
 package com.mygdx.game.character.controllers;
 
-import java.lang.Math;
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
@@ -37,36 +33,17 @@ public class DirectionController extends Touchpad {
         return touchpadStyle;
     }
 
-    private float getAngleX(float knobX){
-        return ((-knobX * 90) / 150);
+
+    private float getAngle() {
+        Vector2 v = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
+        return v.angle();
     }
 
-    private float reverseAngle(){
-        // Vector2 v = new Vector2(this.getKnobX(), this.getKnobY());
-        Vector2 v = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
-        return v.angle();    
-    }
-    
-    private void initDirectionControllerListener(){
-            float degree;
-            this.addListener(new ChangeListener() {
+    private void initDirectionControllerListener(final MainCharacter mainCharacter) {
+        this.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                float deltaX = ((Touchpad) actor).getKnobX();
-                float deltaY = ((Touchpad) actor).getKnobY();
-                
-                mainCharacter.getSprite().setRotation(reverseAngle());
-                /*
-                degree = mainCharacter.getSprite().getRotation();
-                mainCharacter.getSprite().rotate(-degree);
-                if (deltaX > 15f && deltaY < 150){ // bottom
-                    mainCharacter.getSprite().rotate(getAngleX(deltaX));
-                }
-                else {
-                   mainCharacter.getSprite().rotate(-getAngleX(deltaX));
-                }
-                */
-                Gdx.app.log("Kob x ", String.valueOf(getAngleX(deltaX)) + " and y " + String.valueOf(getKnobY()) + " " + mainCharacter.getSprite().getRotation());
+                mainCharacter.getSprite().setRotation(getAngle());
             }
         });
     }
@@ -76,10 +53,10 @@ public class DirectionController extends Touchpad {
         this.setX(Gdx.graphics.getWidth() - this.getWidth());
         this.stage = new Stage();
         inputProcessor = stage;
-        initDirectionControllerListener();
+        initDirectionControllerListener(mainCharacter);
     }
 
-    public void renderdirectionController() {
+    public void renderDirectionController() {
         stage.addActor(this);
         stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();

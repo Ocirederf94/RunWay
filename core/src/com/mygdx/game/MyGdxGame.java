@@ -18,7 +18,7 @@ public class MyGdxGame extends Game {
     @Override
     public void render() {
         mainView.toRender();
-        //fpsLogger.log();
+        fpsLogger.log();
     }
 
     @Override
