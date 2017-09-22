@@ -10,12 +10,14 @@ public class GameConstants {
     public static final String TOUCHPAD_KNOB_BACKGROUND_IMAGE = "backgorund_images/touchKnob.png";
     public static final String TOUCHPAD_DIRECTION_BACKGROUND_IMAGE = "backgorund_images/directionTouchBackground.png";
     public static final String TOUCHPAD_DIRECTION__KNOB_BACKGROUND_IMAGE = "backgorund_images/directionTouchKnob.png";
+    public static final String SHOOTING_CONTROLLER_BACKGROUND_IMAGE = "backgorund_images/shootingController.png";
     public static final String MAIN_CHARACTER_BACKGROUND = "backgorund_images/characterBackground_Shooting.png";
 
     public static final String TOUCHPAD_BACKGROUND = "touchBackground";
     public static final String TOUCHPAD_KNOB_BACKGROUND = "touchKnob";
     public static final String TOUCHPAD_DIRECTION__BACKGROUND = "directionTouchBackground";
     public static final String TOUCHPAD_DIRECTION__KNOB_BACKGROUND = "directionTouchKnob";
+    public static final String SHOOTING_CONTROLLER_BACKGROUND = "shootingController";
 
     public static final int INT_ZERO = 0;
     public static final int INT_TWO = 2;
