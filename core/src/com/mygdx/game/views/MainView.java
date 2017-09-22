@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.character.MainCharacter;
 import com.mygdx.game.character.controllers.MovementController;
 import com.mygdx.game.character.controllers.DirectionController;
+import com.mygdx.game.character.controllers.ShootingController;
 import com.mygdx.game.constants.GameConstants;
 
 /**
@@ -21,6 +22,7 @@ public class MainView {
     private MainCharacter mainCharacter;
     private MovementController movementController;
     private DirectionController directionController;
+    private ShootingController shootingController;
     private InputMultiplexer inputMultiplexer;
 
     private void addInputProcessorsToInputMultiplexer(InputProcessor inputProcessor) {
@@ -43,6 +45,7 @@ public class MainView {
         mainCharacter.renderCharacter();
         movementController.renderMovementController();
         directionController.renderdirectionController();
+        shootingController.renderShootingController();
         movementController.moveMainCharacter(mainCharacter);
     }
 
@@ -52,9 +55,11 @@ public class MainView {
         mainCharacter = new MainCharacter(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         movementController = new MovementController();
         directionController = new DirectionController(mainCharacter);
+        shootingController = new ShootingController(movementController, directionController);
         inputMultiplexer = new InputMultiplexer();
         addInputProcessorsToInputMultiplexer(directionController.getInputProcessor());
         addInputProcessorsToInputMultiplexer(movementController.getInputProcessor());
+        addInputProcessorsToInputMultiplexer(shootingController.getInputProcessor());
     }
 
     public void toRender() {
@@ -68,6 +73,7 @@ public class MainView {
         mainCharacter.disposeCharacterObjects();
         movementController.disposeStage();
         directionController.disposeStage();
+        shootingController.disposeStage();
     }
 
 
