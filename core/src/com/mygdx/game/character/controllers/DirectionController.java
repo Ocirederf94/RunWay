@@ -45,15 +45,10 @@ public class DirectionController extends Touchpad {
         Vector2 v = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
         return v.angle();    
     }
-
-    public DirectionController(final MainCharacter mainCharacter) {
-        super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
-        this.setX(Gdx.graphics.getWidth() - this.getWidth());
-        this.stage = new Stage();
-        inputProcessor = stage;
-
-        addListener(new ChangeListener() {
+    
+    private void initDirectionControllerListener(){
             float degree;
+            this.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 float deltaX = ((Touchpad) actor).getKnobX();
@@ -71,6 +66,13 @@ public class DirectionController extends Touchpad {
                 Gdx.app.log("Kob x ", String.valueOf(getAngleX(deltaX)) + " and y " + String.valueOf(getKnobY()) + " " + mainCharacter.getSprite().getRotation());
             }
         });
+    }
+
+    public DirectionController(final MainCharacter mainCharacter) {
+        super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
+        this.setX(Gdx.graphics.getWidth() - this.getWidth());
+        this.stage = new Stage();
+        inputProcessor = stage;
     }
 
     public void renderdirectionController() {
