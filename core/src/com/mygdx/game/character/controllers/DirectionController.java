@@ -41,8 +41,9 @@ public class DirectionController extends Touchpad {
         return ((-knobX * 90) / 150);
     }
 
-    private float reverseAngle(float reverseFloat){
-        return ((reverseFloat * 90) / 150);
+    private float reverseAngle(){
+        Vector2 v = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
+        return v.angle();    
     }
 
     public DirectionController(final MainCharacter mainCharacter) {
@@ -60,6 +61,7 @@ public class DirectionController extends Touchpad {
 
                 degree = mainCharacter.getSprite().getRotation();
                 mainCharacter.getSprite().rotate(-degree);
+                // mainCharacter.getSprite().rotate(reverseAngle());
                 if (deltaX > 15f && deltaY < 150){ // bottom
                     mainCharacter.getSprite().rotate(getAngleX(deltaX));
                 }
