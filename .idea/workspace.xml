@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2970f456-3eb9-402c-bbb4-e3b14b498ee1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/character/wepons/Bullet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
@@ -19,46 +18,34 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/MyGdxGame.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/MyGdxGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/character/controllers/DirectionController$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/character/controllers/DirectionController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/character/controllers/DirectionController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/character/controllers/DirectionController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/character/controllers/MovementController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/character/controllers/MovementController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/character/controllers/ShootingController$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/character/controllers/ShootingController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/character/controllers/ShootingController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/character/controllers/ShootingController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/constants/GameConstants.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/game/constants/GameConstants.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_4.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_4.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_9.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_9.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/MyGdxGame.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/MyGdxGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/character/controllers/DirectionController$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/character/controllers/DirectionController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/character/controllers/DirectionController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/character/controllers/DirectionController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/character/controllers/MovementController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/character/controllers/MovementController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/character/controllers/ShootingController$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/character/controllers/ShootingController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/character/controllers/ShootingController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/character/controllers/ShootingController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/MyGdxGame.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/MyGdxGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/character/controllers/DirectionController$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/character/controllers/DirectionController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/constants/GameConstants.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1370928423/com/mygdx/game/constants/GameConstants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/AndroidLauncher.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/AndroidLauncher.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/LaunchActivity.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/LaunchActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/character/controllers/DirectionController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/character/controllers/DirectionController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/character/controllers/MovementController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/character/controllers/MovementController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/character/controllers/ShootingController$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/character/controllers/ShootingController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/character/controllers/ShootingController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/character/controllers/ShootingController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/MyGdxGame.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/MyGdxGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/character/controllers/DirectionController$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/character/controllers/DirectionController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/constants/GameConstants.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/game/constants/GameConstants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/AndroidLauncher.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/AndroidLauncher.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/LaunchActivity.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/LaunchActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/character/controllers/DirectionController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/character/controllers/DirectionController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/character/controllers/MovementController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/character/controllers/MovementController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/character/controllers/ShootingController$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/character/controllers/ShootingController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/character/controllers/ShootingController.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/mygdx/game/character/controllers/ShootingController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/game/constants/GameConstants.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/game/constants/GameConstants.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/outputs/apk/android-debug.apk" afterPath="$PROJECT_DIR$/android/build/outputs/apk/android-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/MyGdxGame.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/MyGdxGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/character/controllers/DirectionController$1.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/character/controllers/DirectionController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/character/controllers/DirectionController.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/character/controllers/DirectionController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/character/controllers/MovementController.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/character/controllers/MovementController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/character/controllers/ShootingController$1.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/character/controllers/ShootingController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/character/controllers/ShootingController.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/character/controllers/ShootingController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/MyGdxGame.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/MyGdxGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/character/controllers/DirectionController$1.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/character/controllers/DirectionController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/constants/GameConstants.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_4a13a443vu4jp386ypf7ysx7j/com/mygdx/game/constants/GameConstants.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/character/controllers/DirectionController.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/character/controllers/DirectionController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/character/controllers/MovementController.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/character/controllers/MovementController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/character/controllers/ShootingController$1.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/character/controllers/ShootingController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/character/controllers/ShootingController.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/character/controllers/ShootingController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/constants/GameConstants.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/game/constants/GameConstants.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
@@ -66,11 +53,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/buildId.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/buildId.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/MyGdxGame.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/MyGdxGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/buildId.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/DirectionController.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/DirectionController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/MovementController.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/MovementController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/ShootingController.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/ShootingController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/constants/GameConstants.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/constants/GameConstants.java" />
     </list>
     <ignored path="RunWay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovementController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MovementController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/MovementController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+            <state relative-caret-position="273">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,8 +138,8 @@
       <file leaf-file-name="DirectionController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/DirectionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="44" column="65" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
+            <state relative-caret-position="239">
+              <caret line="53" column="91" selection-start-line="53" selection-start-column="91" selection-end-line="53" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1720#1921#0" expanded="true" />
@@ -173,7 +162,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShootingController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShootingController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/ShootingController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="86">
@@ -211,8 +200,8 @@
       <file leaf-file-name="GameConstants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/constants/GameConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+            <state relative-caret-position="255">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -2496,11 +2485,11 @@
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/character/MainCharacter.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/character/MainCharacterCamera.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/views/MainView.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/constants/GameConstants.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/DirectionController.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/MovementController.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/MyGdxGame.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/ShootingController.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/MovementController.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/DirectionController.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/constants/GameConstants.java" />
       </list>
     </option>
   </component>
@@ -2802,7 +2791,7 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="Pixel5.0" />
+    <property name="device.picker.selection" value="NX541J" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -3564,14 +3553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/constants/GameConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/MyGdxGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -3580,33 +3561,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/MovementController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/wepons/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/DirectionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="44" column="65" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1720#1921#0" expanded="true" />
-            <element signature="e#1920#1921#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3619,6 +3578,36 @@
             <element signature="e#1193#1398#0" expanded="true" />
             <element signature="e#1397#1398#0" expanded="true" />
             <element signature="e#2251#2252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/DirectionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="53" column="91" selection-start-line="53" selection-start-column="91" selection-end-line="53" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1720#1921#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/constants/GameConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/controllers/MovementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

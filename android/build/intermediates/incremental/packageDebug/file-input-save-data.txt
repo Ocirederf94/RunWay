@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Sep 22 20:29:21 CEST 2017
+#Fri Sep 22 20:47:48 CEST 2017
 210.set=ANDROID_RESOURCE
 282.file=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\notification_action.xml
 14.set=ANDROID_RESOURCE

@@ -33,6 +33,7 @@ public class MovementController extends Touchpad {
 
     public MovementController() {
         super(GameConstants.MOVEMENT_TOUCHPAD_DEADZONE_RADIUS, setTouchpadStyle());
+        this.setX(GameConstants.BORDER_SPACING);
         stage = new Stage();
         inputProcessor = stage;
     }
