@@ -50,6 +50,7 @@ public class DirectionController extends Touchpad {
 
     public DirectionController(final MainCharacter mainCharacter) {
         super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
+        this.setResetOnTouchUp(false);
         this.setX(Gdx.graphics.getWidth() - this.getWidth());
         this.stage = new Stage();
         inputProcessor = stage;
