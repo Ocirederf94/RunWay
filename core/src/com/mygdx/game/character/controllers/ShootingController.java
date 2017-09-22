@@ -24,6 +24,10 @@ public class ShootingController extends ImageButton {
 
     public ShootingController(MovementController movementController, DirectionController directionController){
         super(initButtonSkin());
+        this.setX(movementController.getWidth() + GameConstants.GENERAL_SPACING);
+        this.setWidth(Gdx.graphics.getWidth() - ((GameConstants.GENERAL_SPACING 
+                                                 * GameConstants.INT_TWO) + movementController.getWidth() 
+                                                 + directionController.getWidth()));
         stage = new Stage();
         inputProcessor = stage;
     }
