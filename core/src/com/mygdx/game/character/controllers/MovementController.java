@@ -44,7 +44,9 @@ public class MovementController extends Touchpad {
     }
 
     public void moveMainCharacter(MainCharacter mainCharacter) {
-        mainCharacter.getMainCharacterCamera().translate(this.getKnobPercentX(), this.getKnobPercentY());
+        mainCharacter.getMainCharacterCamera().translate(this.getKnobPercentX() * GameConstants.CHARACTER_VELOCITY,
+                this.getKnobPercentY() * GameConstants.CHARACTER_VELOCITY);
+        //mainCharacter.getMainCharacterCamera().translate(this.getKnobPercentX(), this.getKnobPercentY());
         mainCharacter.getMainCharacterCamera().update();
     }
 

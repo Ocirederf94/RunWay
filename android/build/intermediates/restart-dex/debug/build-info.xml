@@ -6,30 +6,33 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1506104408335"
+    timestamp="1506105706083"
     token="-5578043556208834988"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="717" />
+        duration="195" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="30" />
+        duration="41" />
     <task
         name="verifier"
-        duration="48" />
+        duration="7" />
 
+    <artifact
+        location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
     <artifact
         location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1506103853454"
+        timestamp="1506104958048"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -70,8 +73,11 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1506104408335"
+        timestamp="1506105706083"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
         <artifact
             location="D:\Projects\Git\RunWay\android\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />

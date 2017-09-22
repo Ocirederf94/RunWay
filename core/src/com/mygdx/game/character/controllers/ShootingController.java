@@ -2,6 +2,7 @@ package com.mygdx.game.character.controllers;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -22,42 +23,45 @@ public class ShootingController extends ImageButton {
     private InputProcessor inputProcessor;
     private static Drawable drawable;
 
-    private static Drawable initButtonSkin(){
+    private static Drawable initButtonSkin() {
         return drawable = new TextureRegionDrawable(new TextureRegion(new Texture(GameConstants.SHOOTING_CONTROLLER_BACKGROUND_IMAGE)));
     }
 
-    private void initShootingControllerListener(){
-          this.addListener(new ChangeListener() {
+    private void initShootingControllerListener() {
+        setProgrammaticChangeEvents(true);
+        this.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                               
+                if (isPressed()) {
+                 
+                }
             }
         });
     }
 
-    public ShootingController(MovementController movementController, DirectionController directionController){
+    public ShootingController(MovementController movementController, DirectionController directionController) {
         super(initButtonSkin());
         this.setX(movementController.getWidth() + GameConstants.GENERAL_SPACING);
         this.setY(movementController.getHeight() - (this.getHeight() * GameConstants.FLOAT_ONE_FIVE));
-        this.setWidth(Gdx.graphics.getWidth() - ((GameConstants.GENERAL_SPACING 
-                                                 * GameConstants.INT_TWO) + movementController.getWidth() 
-                                                 + directionController.getWidth()));
+        this.setWidth(Gdx.graphics.getWidth() - ((GameConstants.GENERAL_SPACING
+                * GameConstants.INT_TWO) + movementController.getWidth()
+                + directionController.getWidth()));
         stage = new Stage();
         inputProcessor = stage;
         initShootingControllerListener();
     }
-    
-    public void renderShootingController(){
+
+    public void renderShootingController() {
         stage.addActor(this);
         stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
-    
-    public InputProcessor getInputProcessor(){
+
+    public InputProcessor getInputProcessor() {
         return inputProcessor;
     }
-    
-     public void disposeStage() {
+
+    public void disposeStage() {
         stage.dispose();
     }
 }
