@@ -41,11 +41,12 @@ public class PlayerInitializer {
         addInputProcessorsToInputMultiplexer(directionController.getInputProcessor());
         addInputProcessorsToInputMultiplexer(movementController.getInputProcessor());
         addInputProcessorsToInputMultiplexer(shootingController.getInputProcessor());
+        Gdx.input.setInputProcessor(inputMultiplexer);
+
     }
 
     public void renderCharacterObjects(){
         setMainCharacter();
-        Gdx.input.setInputProcessor(inputMultiplexer);
     }
 
     public void disposeCharacterObjects() {

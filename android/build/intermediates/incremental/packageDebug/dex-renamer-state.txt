@@ -1,4 +1,4 @@
-#Sat Sep 23 16:12:20 CEST 2017
+#Sat Sep 23 19:22:58 CEST 2017
 base.0=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_80b8bc57aecc99471931cd47aeb50759ac934af2
 renamed.1=classes2.dex
 renamed.0=classes.dex

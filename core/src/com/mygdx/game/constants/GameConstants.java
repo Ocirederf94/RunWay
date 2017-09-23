@@ -19,6 +19,8 @@ public class GameConstants {
     public static final String TOUCHPAD_DIRECTION__KNOB_BACKGROUND = "directionTouchKnob";
     public static final String SHOOTING_CONTROLLER_BACKGROUND = "shootingController";
 
+    public static final String MY_FONT =  "fonts/myfont.fnt";
+
     public static final int INT_ZERO = 0;
     public static final int INT_TWO = 2;
     public static final int CHARACTER_RADIUS = 25;
