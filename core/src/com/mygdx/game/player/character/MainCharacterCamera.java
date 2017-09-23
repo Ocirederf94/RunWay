@@ -1,4 +1,4 @@
-package com.mygdx.game.character;
+package com.mygdx.game.player.character;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
 

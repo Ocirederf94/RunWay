@@ -1,4 +1,4 @@
-package com.mygdx.game.character;
+package com.mygdx.game.player.character;
 
 /**
  * Created by fredy on 08/09/2017.

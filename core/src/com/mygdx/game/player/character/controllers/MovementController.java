@@ -1,4 +1,4 @@
-package com.mygdx.game.character.controllers;
+package com.mygdx.game.player.character.controllers;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
-import com.mygdx.game.character.MainCharacter;
+import com.mygdx.game.player.character.MainCharacter;
 import com.mygdx.game.constants.GameConstants;
 
 /**

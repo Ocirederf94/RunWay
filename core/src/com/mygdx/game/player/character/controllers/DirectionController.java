@@ -1,4 +1,4 @@
-package com.mygdx.game.character.controllers;
+package com.mygdx.game.player.character.controllers;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
@@ -9,7 +9,6 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
-import com.mygdx.game.character.MainCharacter;
 import com.mygdx.game.constants.GameConstants;
 
 /**
@@ -39,7 +38,7 @@ public class DirectionController extends Touchpad {
         return v.angle();
     }
 
-    private void initDirectionControllerListener(final MainCharacter mainCharacter) {
+    private void initDirectionControllerListener(final com.mygdx.game.player.character.MainCharacter mainCharacter) {
         this.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -48,7 +47,7 @@ public class DirectionController extends Touchpad {
         });
     }
 
-    public DirectionController(final MainCharacter mainCharacter) {
+    public DirectionController(final com.mygdx.game.player.character.MainCharacter mainCharacter) {
         super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
         this.setResetOnTouchUp(false);
         this.setX(Gdx.graphics.getWidth() - (this.getWidth() + GameConstants.BORDER_SPACING));
