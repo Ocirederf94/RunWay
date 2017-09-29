@@ -8,6 +8,7 @@ import com.mygdx.game.player.character.MainCharacterCamera;
 import com.mygdx.game.player.character.controllers.DirectionController;
 import com.mygdx.game.player.character.controllers.MovementController;
 import com.mygdx.game.player.character.controllers.ShootingController;
+import com.mygdx.game.player.character.wepons.LaserPointer;
 
 /**
  * Created by fredy on 23/09/2017.
@@ -19,6 +20,7 @@ public class PlayerInitializer {
     private DirectionController directionController;
     private ShootingController shootingController;
     private InputMultiplexer inputMultiplexer;
+    private LaserPointer laserPointer;
 
     private void addInputProcessorsToInputMultiplexer(InputProcessor inputProcessor) {
         inputMultiplexer.addProcessor(inputProcessor);
@@ -38,6 +40,7 @@ public class PlayerInitializer {
         directionController = new DirectionController(mainCharacter);
         shootingController = new ShootingController(movementController, directionController);
         inputMultiplexer = new InputMultiplexer();
+        laserPointer = new LaserPointer(mainCharacter);
         addInputProcessorsToInputMultiplexer(directionController.getInputProcessor());
         addInputProcessorsToInputMultiplexer(movementController.getInputProcessor());
         addInputProcessorsToInputMultiplexer(shootingController.getInputProcessor());
