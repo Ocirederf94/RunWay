@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.player.PlayerInitializer;
-import com.mygdx.game.constants.GameConstants;
+import com.mygdx.game.utils.GameConstants;
 
 /**
  * Created by fredy on 08/09/2017.

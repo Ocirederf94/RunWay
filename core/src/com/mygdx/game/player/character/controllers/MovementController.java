@@ -7,7 +7,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
 import com.mygdx.game.player.character.MainCharacter;
-import com.mygdx.game.constants.GameConstants;
+import com.mygdx.game.utils.GameConstants;
 
 /**
  * Created by fredy on 10/09/2017.

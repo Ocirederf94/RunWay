@@ -7,13 +7,11 @@ import com.badlogic.gdx.graphics.FPSLogger;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-import com.mygdx.game.constants.GameConstants;
 import com.mygdx.game.views.MainView;
 
 
 public class MyGdxGame extends Game {
     private MainView mainView;
-    private FPSLogger fpsLogger = new FPSLogger();
     private BitmapFont bitmapFont;
     private SpriteBatch spriteBatch;
 

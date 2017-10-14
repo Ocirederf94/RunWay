@@ -3,7 +3,7 @@ package com.mygdx.game.player.character.wepons;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import com.mygdx.game.constants.GameConstants;
+import com.mygdx.game.utils.GameConstants;
 import com.mygdx.game.player.character.MainCharacter;
 
 /**

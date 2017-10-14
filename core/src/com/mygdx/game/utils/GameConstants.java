@@ -1,4 +1,4 @@
-package com.mygdx.game.constants;
+package com.mygdx.game.utils;
 
 /**
  * Created by fredy on 08/09/2017.

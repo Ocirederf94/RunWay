@@ -3,7 +3,7 @@ package com.mygdx.game.player.character;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.mygdx.game.constants.GameConstants;
+import com.mygdx.game.utils.GameConstants;
 
 
 /**
