@@ -46,12 +46,12 @@ public class ShootingController extends ImageButton {
                 + directionController.getWidth()));
         stage = new Stage();
         inputProcessor = stage;
+        stage.addActor(this);
+        stage.act(Gdx.graphics.getDeltaTime());
         initShootingControllerListener();
     }
 
     public void renderShootingController() {
-        stage.addActor(this);
-        stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
 

@@ -36,11 +36,11 @@ public class MovementController extends Touchpad {
         this.setX(GameConstants.BORDER_SPACING);
         stage = new Stage();
         inputProcessor = stage;
+        stage.addActor(this);
+        stage.act(Gdx.graphics.getDeltaTime());
     }
 
     public void renderMovementController() {
-        stage.addActor(this);
-        stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
 

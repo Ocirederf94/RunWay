@@ -53,12 +53,12 @@ public class DirectionController extends Touchpad {
         this.setX(Gdx.graphics.getWidth() - (this.getWidth() + GameConstants.BORDER_SPACING));
         this.stage = new Stage();
         inputProcessor = stage;
+        stage.addActor(this);
+        stage.act(Gdx.graphics.getDeltaTime());
         initDirectionControllerListener(mainCharacter);
     }
 
     public void renderDirectionController() {
-        stage.addActor(this);
-        stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
 

@@ -6,7 +6,7 @@ package com.mygdx.game.utils;
 
 public class FramesPerSecondLocker {
 
-    public FramesPerSecondLocker(Double frames){
+    public static void lockFrameRate(){
 
     }
 }

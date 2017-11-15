@@ -22,8 +22,10 @@ public class PlayerInitializer {
     private InputMultiplexer inputMultiplexer;
     private LaserPointer laserPointer;
 
-    private void addInputProcessorsToInputMultiplexer(InputProcessor inputProcessor) {
-        inputMultiplexer.addProcessor(inputProcessor);
+    private void addInputProcessorsToInputMultiplexer(InputProcessor... inputProcessor) {
+        for (InputProcessor processor: inputProcessor) {
+            inputMultiplexer.addProcessor(processor);
+        }
     }
 
     private void setMainCharacter() {
@@ -41,11 +43,8 @@ public class PlayerInitializer {
         shootingController = new ShootingController(movementController, directionController);
         inputMultiplexer = new InputMultiplexer();
         laserPointer = new LaserPointer(mainCharacter);
-        addInputProcessorsToInputMultiplexer(directionController.getInputProcessor());
-        addInputProcessorsToInputMultiplexer(movementController.getInputProcessor());
-        addInputProcessorsToInputMultiplexer(shootingController.getInputProcessor());
+        addInputProcessorsToInputMultiplexer(directionController.getInputProcessor(), movementController.getInputProcessor(), shootingController.getInputProcessor());
         Gdx.input.setInputProcessor(inputMultiplexer);
-
     }
 
     public void renderCharacterObjects(){
