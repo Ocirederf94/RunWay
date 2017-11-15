@@ -21,32 +21,6 @@ public class DirectionController extends Touchpad {
     private static TouchpadStyle touchpadStyle;
     private InputProcessor inputProcessor;
 
-    private static TouchpadStyle setTouchpadStyle() {
-        touchPadSkin = new Skin();
-        touchPadSkin.add(GameConstants.TOUCHPAD_DIRECTION__BACKGROUND, new Texture(GameConstants.TOUCHPAD_DIRECTION_BACKGROUND_IMAGE));
-        touchPadSkin.add(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND, new Texture(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND_IMAGE));
-
-        touchpadStyle = new TouchpadStyle();
-        touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__BACKGROUND);
-        touchpadStyle.knob = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND);
-        return touchpadStyle;
-    }
-
-
-    private float getAngle() {
-        Vector2 v = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
-        return v.angle();
-    }
-
-    private void initDirectionControllerListener(final com.mygdx.game.player.character.MainCharacter mainCharacter) {
-        this.addListener(new ChangeListener() {
-            @Override
-            public void changed(ChangeEvent event, Actor actor) {
-                mainCharacter.getSprite().setRotation(getAngle());
-            }
-        });
-    }
-
     public DirectionController(final com.mygdx.game.player.character.MainCharacter mainCharacter) {
         super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
         this.setResetOnTouchUp(false);
@@ -73,5 +47,30 @@ public class DirectionController extends Touchpad {
     @Override
     public void act(float delta) {
         super.act(delta);
+    }
+
+    private static TouchpadStyle setTouchpadStyle() {
+        touchPadSkin = new Skin();
+        touchPadSkin.add(GameConstants.TOUCHPAD_DIRECTION__BACKGROUND, new Texture(GameConstants.TOUCHPAD_DIRECTION_BACKGROUND_IMAGE));
+        touchPadSkin.add(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND, new Texture(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND_IMAGE));
+
+        touchpadStyle = new TouchpadStyle();
+        touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__BACKGROUND);
+        touchpadStyle.knob = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND);
+        return touchpadStyle;
+    }
+
+    private float getAngle() {
+        Vector2 v = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
+        return v.angle();
+    }
+
+    private void initDirectionControllerListener(final com.mygdx.game.player.character.MainCharacter mainCharacter) {
+        this.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                mainCharacter.getSprite().setRotation(getAngle());
+            }
+        });
     }
 }

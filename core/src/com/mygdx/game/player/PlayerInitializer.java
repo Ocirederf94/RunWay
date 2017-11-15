@@ -22,20 +22,6 @@ public class PlayerInitializer {
     private InputMultiplexer inputMultiplexer;
     private LaserPointer laserPointer;
 
-    private void addInputProcessorsToInputMultiplexer(InputProcessor... inputProcessor) {
-        for (InputProcessor processor: inputProcessor) {
-            inputMultiplexer.addProcessor(processor);
-        }
-    }
-
-    private void setMainCharacter() {
-        mainCharacter.renderCharacter();
-        movementController.renderMovementController();
-        directionController.renderDirectionController();
-        shootingController.renderShootingController();
-        movementController.moveMainCharacter(mainCharacter);
-    }
-
     public  PlayerInitializer(int x, int y){
         mainCharacter = new MainCharacter(x, y);
         movementController = new MovementController();
@@ -60,5 +46,19 @@ public class PlayerInitializer {
 
     public MainCharacterCamera getCamera(){
         return mainCharacter.getMainCharacterCamera();
+    }
+
+    private void addInputProcessorsToInputMultiplexer(InputProcessor... inputProcessor) {
+        for (InputProcessor processor: inputProcessor) {
+            inputMultiplexer.addProcessor(processor);
+        }
+    }
+
+    private void setMainCharacter() {
+        mainCharacter.renderCharacter();
+        movementController.renderMovementController();
+        directionController.renderDirectionController();
+        shootingController.renderShootingController();
+        movementController.moveMainCharacter(mainCharacter);
     }
 }

@@ -16,11 +16,6 @@ public class MainCharacter {
     private Sprite sprite;
     private MainCharacterCamera mainCharacterCamera;
 
-    private void setSpriteBatchAndSprite() {
-        spriteBatch.begin();
-        sprite.draw(spriteBatch);
-        spriteBatch.end();
-    }
 
     public MainCharacter(int width, int height) {
         mainCharacterTexture = new Texture(GameConstants.MAIN_CHARACTER_BACKGROUND);
@@ -47,4 +42,9 @@ public class MainCharacter {
         return mainCharacterCamera;
     }
 
+    private void setSpriteBatchAndSprite() {
+        spriteBatch.begin();
+        sprite.draw(spriteBatch);
+        spriteBatch.end();
+    }
 }

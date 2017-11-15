@@ -21,22 +21,6 @@ public class ShootingController extends ImageButton {
     private InputProcessor inputProcessor;
     private static Drawable drawable;
 
-    private static Drawable initButtonSkin() {
-        return drawable = new TextureRegionDrawable(new TextureRegion(new Texture(GameConstants.SHOOTING_CONTROLLER_BACKGROUND_IMAGE)));
-    }
-
-    private void initShootingControllerListener() {
-        setProgrammaticChangeEvents(true);
-        this.addListener(new ChangeListener() {
-            @Override
-            public void changed(ChangeEvent event, Actor actor) {
-                if (isPressed()) {
-                 
-                }
-            }
-        });
-    }
-
     public ShootingController(MovementController movementController, DirectionController directionController) {
         super(initButtonSkin());
         this.setX(movementController.getWidth() + GameConstants.GENERAL_SPACING);
@@ -61,5 +45,21 @@ public class ShootingController extends ImageButton {
 
     public void disposeStage() {
         stage.dispose();
+    }
+
+    private static Drawable initButtonSkin() {
+        return drawable = new TextureRegionDrawable(new TextureRegion(new Texture(GameConstants.SHOOTING_CONTROLLER_BACKGROUND_IMAGE)));
+    }
+
+    private void initShootingControllerListener() {
+        setProgrammaticChangeEvents(true);
+        this.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                if (isPressed()) {
+                 
+                }
+            }
+        });
     }
 }

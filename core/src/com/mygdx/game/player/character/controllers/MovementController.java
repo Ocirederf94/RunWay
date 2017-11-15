@@ -19,16 +19,6 @@ public class MovementController extends Touchpad {
     private static TouchpadStyle touchpadStyle;
     private InputProcessor inputProcessor;
 
-    private static TouchpadStyle setTouchpadStyle() {
-        touchPadSkin = new Skin();
-        touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUND, new Texture(GameConstants.TOUCHPAD_BACKGROUND_IMAGE));
-        touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUND, new Texture(GameConstants.TOUCHPAD_KNOB_BACKGROUND_IMAGE));
-
-        touchpadStyle = new TouchpadStyle();
-        touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_BACKGROUND);
-        touchpadStyle.knob = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_KNOB_BACKGROUND);
-        return touchpadStyle;
-    }
 
 
     public MovementController() {
@@ -62,7 +52,16 @@ public class MovementController extends Touchpad {
     @Override
     public void act(float delta) {
         super.act(delta);
+    }
 
+    private static TouchpadStyle setTouchpadStyle() {
+        touchPadSkin = new Skin();
+        touchPadSkin.add(GameConstants.TOUCHPAD_BACKGROUND, new Texture(GameConstants.TOUCHPAD_BACKGROUND_IMAGE));
+        touchPadSkin.add(GameConstants.TOUCHPAD_KNOB_BACKGROUND, new Texture(GameConstants.TOUCHPAD_KNOB_BACKGROUND_IMAGE));
 
+        touchpadStyle = new TouchpadStyle();
+        touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_BACKGROUND);
+        touchpadStyle.knob = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_KNOB_BACKGROUND);
+        return touchpadStyle;
     }
 }
