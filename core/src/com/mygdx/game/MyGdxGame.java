@@ -26,6 +26,7 @@ public class MyGdxGame extends Game {
         mainView = new MainView();
         spriteBatch = new SpriteBatch();
         bitmapFont = new BitmapFont();
+        Gdx.graphics.setVSync(true);
     }
 
     @Override

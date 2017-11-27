@@ -4,11 +4,11 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
-import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.mygdx.game.player.character.MainCharacter;
+import com.mygdx.game.player.character.wepons.LaserPointer;
 import com.mygdx.game.utils.GameConstants;
 
 /**
@@ -20,20 +20,25 @@ public class DirectionController extends Touchpad {
     private static Skin touchPadSkin;
     private static TouchpadStyle touchpadStyle;
     private InputProcessor inputProcessor;
+    private LaserPointer laserPointer;
+    private MainCharacter mainCharacter;
 
-    public DirectionController(final com.mygdx.game.player.character.MainCharacter mainCharacter) {
+    public DirectionController(final MainCharacter mainCharacter, LaserPointer laserPointer) {
         super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
         this.setResetOnTouchUp(false);
+        this.laserPointer = laserPointer;
         this.setX(Gdx.graphics.getWidth() - (this.getWidth() + GameConstants.BORDER_SPACING));
         this.stage = new Stage();
         inputProcessor = stage;
         stage.addActor(this);
         stage.act(Gdx.graphics.getDeltaTime());
-        initDirectionControllerListener(mainCharacter);
+        this.mainCharacter = mainCharacter;
     }
 
     public void renderDirectionController() {
         stage.draw();
+        mainCharacter.getSprite().setRotation(getVector().angle());
+        laserPointer.renderLaserPointer(mainCharacter.getSprite().getU(), mainCharacter.getSprite().getU2());
     }
 
     public InputProcessor getInputProcessor() {
@@ -60,17 +65,8 @@ public class DirectionController extends Touchpad {
         return touchpadStyle;
     }
 
-    private float getAngle() {
+    private Vector2 getVector() {
         Vector2 v = new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
-        return v.angle();
-    }
-
-    private void initDirectionControllerListener(final com.mygdx.game.player.character.MainCharacter mainCharacter) {
-        this.addListener(new ChangeListener() {
-            @Override
-            public void changed(ChangeEvent event, Actor actor) {
-                mainCharacter.getSprite().setRotation(getAngle());
-            }
-        });
+        return v;
     }
 }
