@@ -35,7 +35,7 @@ public class MainView {
     public MainView() {
         backgroundSpriteBatch = new SpriteBatch();
         texture = new Texture(GameConstants.MAIN_VIEW_BACKGROUND);
-        playerInitializer = new PlayerInitializer(Gdx.graphics.getWidth() / GameConstants.INT_TWO, Gdx.graphics.getHeight() / GameConstants.INT_TWO);
+        playerInitializer = new PlayerInitializer();
 
     }
 

@@ -22,8 +22,8 @@ public class PlayerInitializer {
     private InputMultiplexer inputMultiplexer;
     private LaserPointer laserPointer;
 
-    public  PlayerInitializer(int x, int y){
-        mainCharacter = new MainCharacter(x, y);
+    public  PlayerInitializer(){
+        mainCharacter = new MainCharacter();
         laserPointer = new LaserPointer();
         movementController = new MovementController(laserPointer);
         directionController = new DirectionController(mainCharacter, laserPointer);
@@ -56,9 +56,9 @@ public class PlayerInitializer {
     }
 
     private void setMainCharacter() {
+        directionController.renderDirectionController();
         mainCharacter.renderCharacter();
         movementController.renderMovementController();
-        directionController.renderDirectionController();
         shootingController.renderShootingController();
         movementController.moveMainCharacter(mainCharacter);
     }

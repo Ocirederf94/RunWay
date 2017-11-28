@@ -1,5 +1,6 @@
 package com.mygdx.game.player.character;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -15,15 +16,17 @@ public class MainCharacter {
     private SpriteBatch spriteBatch;
     private Sprite sprite;
     private MainCharacterCamera mainCharacterCamera;
+    private float initialX = Gdx.graphics.getWidth() / 2;
+    private float initialY = Gdx.graphics.getHeight() / 2;
 
 
-    public MainCharacter(int width, int height) {
+    public MainCharacter() {
         mainCharacterTexture = new Texture(GameConstants.MAIN_CHARACTER_BACKGROUND);
         sprite = new Sprite(mainCharacterTexture);
         spriteBatch = new SpriteBatch();
         mainCharacterCamera = new MainCharacterCamera();
-        sprite.setPosition(width, height);
-        mainCharacterCamera.setCameraOnPlayer(width, height);
+        sprite.setPosition((initialX - mainCharacterTexture.getWidth() / 2), initialY - (mainCharacterTexture.getHeight() / 2));
+        mainCharacterCamera.setCameraOnPlayer(initialX, initialY);
     }
 
     public void renderCharacter() {
