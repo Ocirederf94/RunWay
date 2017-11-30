@@ -7,7 +7,6 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
 import com.mygdx.game.player.character.MainCharacter;
-import com.mygdx.game.player.character.wepons.LaserPointer;
 import com.mygdx.game.utils.GameConstants;
 
 /**
@@ -21,7 +20,7 @@ public class MovementController extends Touchpad {
     private InputProcessor inputProcessor;
 
 
-    public MovementController(LaserPointer laserPointer) {
+    public MovementController() {
         super(GameConstants.MOVEMENT_TOUCHPAD_DEADZONE_RADIUS, setTouchpadStyle());
         this.setX(GameConstants.BORDER_SPACING);
         stage = new Stage();

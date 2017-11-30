@@ -25,7 +25,7 @@ public class PlayerInitializer {
     public  PlayerInitializer(){
         mainCharacter = new MainCharacter();
         laserPointer = new LaserPointer();
-        movementController = new MovementController(laserPointer);
+        movementController = new MovementController();
         directionController = new DirectionController(mainCharacter, laserPointer);
         shootingController = new ShootingController(movementController, directionController);
         inputMultiplexer = new InputMultiplexer();
@@ -42,7 +42,7 @@ public class PlayerInitializer {
         movementController.disposeStage();
         directionController.disposeStage();
         shootingController.disposeStage();
-        laserPointer.dispose();
+        laserPointer.disposeLaserPointer();
     }
 
     public MainCharacterCamera getCamera(){
@@ -61,5 +61,6 @@ public class PlayerInitializer {
         movementController.renderMovementController();
         shootingController.renderShootingController();
         movementController.moveMainCharacter(mainCharacter);
+        laserPointer.renderLaserPointer();
     }
 }

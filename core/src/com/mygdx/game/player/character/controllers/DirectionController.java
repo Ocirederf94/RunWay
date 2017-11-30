@@ -11,6 +11,8 @@ import com.mygdx.game.player.character.MainCharacter;
 import com.mygdx.game.player.character.wepons.LaserPointer;
 import com.mygdx.game.utils.GameConstants;
 
+
+
 /**
  * Created by fredy on 18/09/2017.
  */
@@ -22,6 +24,8 @@ public class DirectionController extends Touchpad {
     private InputProcessor inputProcessor;
     private LaserPointer laserPointer;
     private MainCharacter mainCharacter;
+    private float initialX = Gdx.graphics.getWidth() / 2;
+    private float initialY = Gdx.graphics.getHeight() / 2;
 
     public DirectionController(final MainCharacter mainCharacter, LaserPointer laserPointer) {
         super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
@@ -37,8 +41,8 @@ public class DirectionController extends Touchpad {
 
     public void renderDirectionController() {
         stage.draw();
-        mainCharacter.getSprite().setRotation(getVector().angle());
-        pointLaserPointer();
+        mainCharacter.getSprite().setRotation(getVector());
+        laserPointer.getSprite().setRotation(getVector());
     }
 
     public InputProcessor getInputProcessor() {
@@ -65,12 +69,7 @@ public class DirectionController extends Touchpad {
         return touchpadStyle;
     }
 
-    private Vector2 getVector() {
-        return new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
-    }
-
-    private void pointLaserPointer(){
-        laserPointer.renderCircle();
-        laserPointer.renderLaserPointer(mainCharacter.getSprite().getU(), mainCharacter.getSprite().getU2());
+    private float getVector() {
+        return new Vector2(this.getKnobPercentX(), this.getKnobPercentY()).angle();
     }
 }
