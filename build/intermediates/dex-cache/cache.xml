@@ -3,12 +3,156 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_4ed6b38457bc9bf7787fc48b8d3c25cf35c65344\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.underwaterapps.overlap2druntime\overlap2d-runtime-libgdx\0.1.0\1dd0d0808d1e44fe10c749d8216c44e5c4c99361\overlap2d-runtime-libgdx-0.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1dd0d0808d1e44fe10c749d8216c44e5c4c99361">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\overlap2d-runtime-libgdx-0.1.0_6b63fc08af54688ae4c2d33841b8a84eb12d4e91\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-controllers\1.9.6\ea1fd4884be631d9b7cd0f496b1ab39e31eb434b\gdx-controllers-1.9.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ea1fd4884be631d9b7cd0f496b1ab39e31eb434b">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\gdx-controllers-1.9.6_db6a45e8dfdf663f7cdccec8f4afefff0b979c8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.android\build-cache\d505c5237ecd7f280b492dacda0fcbe8d159ebf2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f6f6215139cfebb0b7b1c9994b2ea9b0d792ef44\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="43a08f2cc1bc8e9678b5a1740f3b91b50ab50ac6">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\classes_456558eb656ce16ad04f8796ff7878373d6694c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.android\build-cache\253a2e48eaca43840c5d0ea1d798f3edda89bc65\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fa3b3b94a3c4ce0041cb65e9765a1bbcc29b66f5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Projects\Git\RunWay\android\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
-        revision="26.0.1"
+        revision="26.0.2"
         sha1="45e3728ca06a62a8ac38babe681e1bb6600fc07b">
         <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_da05cb6b0edaecae1caa9f83d2a59411f5da17b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.android\build-cache\e7ac641fc78ce902625859055fdb2593700af453\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_550bfbe6c5c00580027b5ee68a2f6dd880392eaa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\net.dermetfan.libgdx-utils\libgdx-utils-box2d\0.13.4\918d79a20ea3c898cdb3611782c5b2bfa6ec575b\libgdx-utils-box2d-0.13.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="918d79a20ea3c898cdb3611782c5b2bfa6ec575b">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\libgdx-utils-box2d-0.13.4_e7db9bee516e486698caa49d2ad8f57327a41868\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.android\build-cache\d7e7e208157e8ef5d340dd63b0c55390321b5781\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\classes_adc6d1f7e14cdbe9a35d880609688b2fc84c8bf8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.android\build-cache\e220ffcd209bc918502f8ef732c3c36833e6090a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\classes_767eba970db9b548e0dd71d22f924cb2ef8e4720\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.android\build-cache\f8c07fba87089573f2fce762472804ed35f7e850\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_95aa2c732c10d29d4ed963a67fac93efc9b64436\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.kotcrab.vis\vis-ui\1.3.0\639741faa66a560197ee06a9412949402c831796\vis-ui-1.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="639741faa66a560197ee06a9412949402c831796">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\vis-ui-1.3.0_34259b775f8724c9f7d5a4580d7df6d6c513c003\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.github.czyzby\gdx-lml-vis\1.9.1.9.6\951c197ebe8c9644bd555722c449fa4cfda527fb\gdx-lml-vis-1.9.1.9.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="951c197ebe8c9644bd555722c449fa4cfda527fb">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\gdx-lml-vis-1.9.1.9.6_6bb4300faa120cf3845c10cc74106a1b934b5970\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.android\build-cache\32e2f13c7bd6d480512405e716e1343228cd6211\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_1331562252a976f6ef8f836bc15517ea843cff4d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.android\build-cache\32e2f13c7bd6d480512405e716e1343228cd6211\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\classes_33d2d0ac1be5a9db965084dfed7f75ecb2f72ea9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fredy\.android\build-cache\2bbff01e153e90eca1d09cd598afafc012bde215\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b25bb9b7b49a942b48e89f8cdd4638794d0afa65\classes.dex" />
     </item>
 
 </items>

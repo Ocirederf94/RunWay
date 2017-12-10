@@ -24,12 +24,12 @@
         "source": "C:\\Users\\fredy\\.android\\build-cache\\e220ffcd209bc918502f8ef732c3c36833e6090a\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "D:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png",
-        "source": "C:\\Users\\fredy\\.android\\build-cache\\e220ffcd209bc918502f8ef732c3c36833e6090a\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
         "merged": "D:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
         "source": "C:\\Users\\fredy\\.android\\build-cache\\e220ffcd209bc918502f8ef732c3c36833e6090a\\output\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "C:\\Users\\fredy\\.android\\build-cache\\e220ffcd209bc918502f8ef732c3c36833e6090a\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "D:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
