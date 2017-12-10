@@ -5,12 +5,15 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
-import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
+import com.mygdx.game.player.character.wepons.Bullet;
 import com.mygdx.game.utils.GameConstants;
+
+import java.util.ArrayList;
 
 /**
  * Created by fredy on 10/09/2017.
@@ -20,6 +23,7 @@ public class ShootingController extends ImageButton {
     private Stage stage;
     private InputProcessor inputProcessor;
     private static Drawable drawable;
+    private ArrayList<Bullet> bulletArrayList;
 
     public ShootingController(MovementController movementController, DirectionController directionController) {
         super(initButtonSkin());
@@ -32,11 +36,14 @@ public class ShootingController extends ImageButton {
         inputProcessor = stage;
         stage.addActor(this);
         stage.act(Gdx.graphics.getDeltaTime());
+        bulletArrayList = new ArrayList<>();
         initShootingControllerListener();
     }
 
     public void renderShootingController() {
         stage.draw();
+        Gdx.app.log("Bullet", String.valueOf(bulletArrayList.size()));
+        bulletArrayList.forEach(bullet -> bullet.renderBullet());
     }
 
     public InputProcessor getInputProcessor() {
@@ -57,7 +64,7 @@ public class ShootingController extends ImageButton {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 if (isPressed()) {
-                 
+                 bulletArrayList.add(new Bullet());
                 }
             }
         });
