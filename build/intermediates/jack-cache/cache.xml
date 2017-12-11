@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\fredy\.android\build-cache\196c0c0571a146353617b4be848ab7091b2af8d9\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-616571ec0ea70562da0911f984973813111515e3.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        revision="26.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\bolts-applinks-1.4.0-e0a5a4c60f075c6a44dbf2fdabf0c1264bbff9a3.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-controllers-android\1.9.6\adb89baaccb577c5ed558c3c1f94253e0f1fd2cf\gdx-controllers-android-1.9.6.jar"
+        revision="26.0.2"
+        sha1="adb89baaccb577c5ed558c3c1f94253e0f1fd2cf">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-controllers-android-1.9.6-c423c8ea1ba0a21ce770ec88e876c437f82cdf6c.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\e7ac641fc78ce902625859055fdb2593700af453\output\jars\libs\internal_impl-25.0.0.jar"
+        revision="26.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\internal_impl-25.0.0-550bfbe6c5c00580027b5ee68a2f6dd880392eaa.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\d7e7e208157e8ef5d340dd63b0c55390321b5781\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-adc6d1f7e14cdbe9a35d880609688b2fc84c8bf8.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.github.czyzby\gdx-kiwi\1.9.1.9.6\c00391b240ccf1212f3acd2095b6df489d4ff281\gdx-kiwi-1.9.1.9.6.jar"
+        revision="26.0.2"
+        sha1="c00391b240ccf1212f3acd2095b6df489d4ff281">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-kiwi-1.9.1.9.6-0e7e8949b2bfb9c132bde8b9457903aef9cc30cb.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.4.0\cc174c559b5177982887bf6e1b76003aebad9516\bolts-android-1.4.0.jar"
+        revision="26.0.2"
+        sha1="cc174c559b5177982887bf6e1b76003aebad9516">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\bolts-android-1.4.0-0bfe840f08900c52be9fc6b8379bd2ca080becbc.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\de.tomgrill.gdxfacebook\gdx-facebook-core\1.4.1\1b5d4948b033a4b9a8f360d0fa76c49e6e17baec\gdx-facebook-core-1.4.1.jar"
+        revision="26.0.2"
+        sha1="1b5d4948b033a4b9a8f360d0fa76c49e6e17baec">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-facebook-core-1.4.1-2197ec46264d2c06d3fc9bdd599a3964f5debbea.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.box2dlights\box2dlights\1.4\3d77ad5b4164fb32fc67e2446e35911bb0aaf0bd\box2dlights-1.4.jar"
+        revision="26.0.2"
+        sha1="3d77ad5b4164fb32fc67e2446e35911bb0aaf0bd">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\box2dlights-1.4-f0e92c01216a0317e9a3c1a7613d0695dc32c842.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\253a2e48eaca43840c5d0ea1d798f3edda89bc65\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-fa3b3b94a3c4ce0041cb65e9765a1bbcc29b66f5.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\d5d796af8091ec781f5f9679264357041868cff1\output\jars\libs\internal_impl-25.0.0.jar"
+        revision="26.0.2"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\internal_impl-25.0.0-92ee526c7d5589105884bfe43f1147a749999b3c.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\d505c5237ecd7f280b492dacda0fcbe8d159ebf2\output\jars\libs\internal_impl-25.0.0.jar"
+        revision="26.0.2"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\internal_impl-25.0.0-21c62590356b72e6dbaf58bce80fe7677230b280.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\e220ffcd209bc918502f8ef732c3c36833e6090a\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-767eba970db9b548e0dd71d22f924cb2ef8e4720.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.kotcrab.vis\vis-ui\1.3.0\639741faa66a560197ee06a9412949402c831796\vis-ui-1.3.0.jar"
+        revision="26.0.2"
+        sha1="639741faa66a560197ee06a9412949402c831796">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\vis-ui-1.3.0-34259b775f8724c9f7d5a4580d7df6d6c513c003.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\f8c07fba87089573f2fce762472804ed35f7e850\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-d94da0a0400da15244d2e537fd3183ff836c297d.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-controllers\1.9.6\ea1fd4884be631d9b7cd0f496b1ab39e31eb434b\gdx-controllers-1.9.6.jar"
+        revision="26.0.2"
+        sha1="ea1fd4884be631d9b7cd0f496b1ab39e31eb434b">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-controllers-1.9.6-db6a45e8dfdf663f7cdccec8f4afefff0b979c8c.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.6\47d1e9b890e364ec28f128e9bb3b9a12a94c164\gdx-1.9.6.jar"
+        revision="26.0.2"
+        sha1="047d1e9b890e364ec28f128e9bb3b9a12a94c164">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-1.9.6-c63582acae530746a5a8b3a748aa2d31f049bf63.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-ai\1.8.0\ec30677d8ab1a8b8aa4b853c5f4e4b1361f50bf5\gdx-ai-1.8.0.jar"
+        revision="26.0.2"
+        sha1="ec30677d8ab1a8b8aa4b853c5f4e4b1361f50bf5">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-ai-1.8.0-ad96888b6c87a43b0bbeccaf256c2c06f553a20d.jar" />
+    </item>
+    <item
+        jar="D:\DevelopmentTools\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        revision="26.0.2"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\support-annotations-25.0.0-b69beb97298b790fa4590f291be3510754828374.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\d5d796af8091ec781f5f9679264357041868cff1\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-5eef88b1ca1d50adacb12e96e251df6f4f4c4933.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.ashley\ashley\1.7.0\a7c4083c0a42027a3c03ba7ccecef6cbe1c5f0a4\ashley-1.7.0.jar"
+        revision="26.0.2"
+        sha1="a7c4083c0a42027a3c03ba7ccecef6cbe1c5f0a4">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\ashley-1.7.0-d43d6ce5245895ddfb5e9f2889c771203eeadb13.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\d505c5237ecd7f280b492dacda0fcbe8d159ebf2\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-f6f6215139cfebb0b7b1c9994b2ea9b0d792ef44.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\d8e6385dcaace9b7188ea9127376c3381128e927\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="43a08f2cc1bc8e9678b5a1740f3b91b50ab50ac6">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-456558eb656ce16ad04f8796ff7878373d6694c6.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.github.czyzby\gdx-lml\1.9.1.9.6\2590018dd6fc37566e3998db2cc2ecce0155c3b4\gdx-lml-1.9.1.9.6.jar"
+        revision="26.0.2"
+        sha1="2590018dd6fc37566e3998db2cc2ecce0155c3b4">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-lml-1.9.1.9.6-6fe446aa9bb33e1e4c76f6f99b80905fe1fb94b9.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\6c29a58f2dbde110c31c520fe98871b71b91cacf\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="f352af4861288cc1a12d131c69ac2fc1479d2206">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-950e1d70fd69a6b4fa4a290725594eaa25561ffa.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        revision="26.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\bolts-tasks-1.4.0-4ed6b38457bc9bf7787fc48b8d3c25cf35c65344.jar" />
+    </item>
+    <item
+        jar="D:\DevelopmentTools\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\constraint-layout-solver-1.0.2-01e875a9ea94884ca0df1256847122f1efa79bfc.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\de.tomgrill.gdxdialogs\gdx-dialogs-core\1.2.1\ae610ab5e02ee53a9aca2181a2cdc679aeb176b9\gdx-dialogs-core-1.2.1.jar"
+        revision="26.0.2"
+        sha1="ae610ab5e02ee53a9aca2181a2cdc679aeb176b9">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-dialogs-core-1.2.1-686e9c861385d64b56939c7327c754bca30cb894.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\32e2f13c7bd6d480512405e716e1343228cd6211\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-33d2d0ac1be5a9db965084dfed7f75ecb2f72ea9.jar" />
+    </item>
+    <item
+        jar="D:\Projects\Git\RunWay\core\build\libs\core-1.0.jar"
+        revision="26.0.2"
+        sha1="61d35d1c73ddb659ac02f84ca181f1f7db9da034">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\core-1.0-88cdbc3ec8776b08c6fcc4f86acf0857757fcac0.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\ce9935982bb53195092183c2c31a7009b7ec4811\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="96452ea1fe36fa54654e545b0263d6a979ee6083">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-42dcd3b6dc9e80204e455e27966570dc178cce50.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-bullet\1.9.6\13a6f83e5ae513c469b9998ed09409ae3667fed\gdx-bullet-1.9.6.jar"
+        revision="26.0.2"
+        sha1="013a6f83e5ae513c469b9998ed09409ae3667fed">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-bullet-1.9.6-52f7bc76e908c6fac2b3eeb1f15e93259736e729.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.6\c249ef4060a4fada952f278455c8f7b9cba3c18a\gdx-box2d-1.9.6.jar"
+        revision="26.0.2"
+        sha1="c249ef4060a4fada952f278455c8f7b9cba3c18a">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-box2d-1.9.6-3254eacfb00a76186e9bdf17fc6fef9dd2c42468.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.underwaterapps.overlap2druntime\overlap2d-runtime-libgdx\0.1.0\1dd0d0808d1e44fe10c749d8216c44e5c4c99361\overlap2d-runtime-libgdx-0.1.0.jar"
+        revision="26.0.2"
+        sha1="1dd0d0808d1e44fe10c749d8216c44e5c4c99361">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\overlap2d-runtime-libgdx-0.1.0-6b63fc08af54688ae4c2d33841b8a84eb12d4e91.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\4d517ccaa9bc9366cb8bcbbbcd8132cfa3e9532d\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-bc1c34ffe4d6472a7ab398ba8061c24d4e690730.jar" />
+    </item>
+    <item
+        jar="D:\DevelopmentTools\Android\sdk\platforms\android-26\optional\org.apache.http.legacy.jar"
+        revision="26.0.2"
+        sha1="d5b8c556427a60ed5f7f0abc415555de7bbba1ad">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackRuntimeLibraries\debug\jars\8000\40\org.apache.http.legacy-2ab06745af742abe9ad69d80824f64a542602a45.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\2bbff01e153e90eca1d09cd598afafc012bde215\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-b25bb9b7b49a942b48e89f8cdd4638794d0afa65.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\32e2f13c7bd6d480512405e716e1343228cd6211\output\jars\libs\internal_impl-25.0.0.jar"
+        revision="26.0.2"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\internal_impl-25.0.0-1331562252a976f6ef8f836bc15517ea843cff4d.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\net.dermetfan.libgdx-utils\libgdx-utils-box2d\0.13.4\918d79a20ea3c898cdb3611782c5b2bfa6ec575b\libgdx-utils-box2d-0.13.4.jar"
+        revision="26.0.2"
+        sha1="918d79a20ea3c898cdb3611782c5b2bfa6ec575b">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\libgdx-utils-box2d-0.13.4-e7db9bee516e486698caa49d2ad8f57327a41868.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\f8c07fba87089573f2fce762472804ed35f7e850\output\jars\libs\internal_impl-25.0.0.jar"
+        revision="26.0.2"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\internal_impl-25.0.0-95aa2c732c10d29d4ed963a67fac93efc9b64436.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\67a94aece23a375c657b9c6a13f8fae02ec252c7\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-50d7425933dd2325f7e6e3f6e6038f9daee4a526.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.android\build-cache\e7ac641fc78ce902625859055fdb2593700af453\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-6c540a24aacc2ec5412b2619f88bf8515c621a55.jar" />
+    </item>
+    <item
+        jar="D:\DevelopmentTools\Android\sdk\platforms\android-26\android.jar"
+        revision="26.0.2"
+        sha1="18eaee6ff2a1c15c603daafb41277ea9376f30b5">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackRuntimeLibraries\debug\jars\8000\40\android-eb8d48c6e6c0e633941ceee677e71c931c434df0.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\net.dermetfan.libgdx-utils\libgdx-utils\0.13.4\27affad2873d1c9c366a2290fc51f3927f3a5f83\libgdx-utils-0.13.4.jar"
+        revision="26.0.2"
+        sha1="27affad2873d1c9c366a2290fc51f3927f3a5f83">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\libgdx-utils-0.13.4-e14bbf0c64797cf93a4a978f77ce8c252c76d983.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.6\57c2831c870743712b808384187ea856e541878f\gdx-backend-android-1.9.6.jar"
+        revision="26.0.2"
+        sha1="57c2831c870743712b808384187ea856e541878f">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-backend-android-1.9.6-87704286a856baf7be6e211c37da8901dfe34823.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-freetype\1.9.6\69187cc3c8062f191df435b43671b0e5ffcbf353\gdx-freetype-1.9.6.jar"
+        revision="26.0.2"
+        sha1="69187cc3c8062f191df435b43671b0e5ffcbf353">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-freetype-1.9.6-6f84a3f3e1be69ed34319e2138568d2836050853.jar" />
+    </item>
+    <item
+        jar="C:\Users\fredy\.gradle\caches\modules-2\files-2.1\com.github.czyzby\gdx-lml-vis\1.9.1.9.6\951c197ebe8c9644bd555722c449fa4cfda527fb\gdx-lml-vis-1.9.1.9.6.jar"
+        revision="26.0.2"
+        sha1="951c197ebe8c9644bd555722c449fa4cfda527fb">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\gdx-lml-vis-1.9.1.9.6-6bb4300faa120cf3845c10cc74106a1b934b5970.jar" />
+    </item>
+
+</items>

@@ -1,4 +1,4 @@
-#Sat Sep 23 18:02:01 CEST 2017
+#Mon Dec 11 22:17:39 CET 2017
 file.9=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.0.0_b69beb97298b790fa4590f291be3510754828374\\classes.dex
 base.10=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\libgdx-utils-box2d-0.13.4_e7db9bee516e486698caa49d2ad8f57327a41868
 file.8=D\:\\Projects\\Git\\RunWay\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_950e1d70fd69a6b4fa4a290725594eaa25561ffa\\classes.dex

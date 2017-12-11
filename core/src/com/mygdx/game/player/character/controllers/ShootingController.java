@@ -42,8 +42,9 @@ public class ShootingController extends ImageButton {
 
     public void renderShootingController() {
         stage.draw();
-        Gdx.app.log("Bullet", String.valueOf(bulletArrayList.size()));
-        bulletArrayList.forEach(bullet -> bullet.renderBullet());
+        for (Bullet bullet : bulletArrayList){
+            bullet.renderBullet();
+        }
     }
 
     public InputProcessor getInputProcessor() {
