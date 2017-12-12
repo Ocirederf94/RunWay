@@ -15,6 +15,8 @@ import com.mygdx.game.utils.GameConstants;
 
 import java.util.ArrayList;
 
+import static com.mygdx.game.utils.GameConstants.BULLET_IMAGE;
+
 /**
  * Created by fredy on 10/09/2017.
  */
@@ -24,6 +26,7 @@ public class ShootingController extends ImageButton {
     private InputProcessor inputProcessor;
     private static Drawable drawable;
     private ArrayList<Bullet> bulletArrayList;
+    private Texture texture;
 
     public ShootingController(MovementController movementController, DirectionController directionController) {
         super(initButtonSkin());
@@ -38,6 +41,7 @@ public class ShootingController extends ImageButton {
         stage.act(Gdx.graphics.getDeltaTime());
         bulletArrayList = new ArrayList<>();
         initShootingControllerListener();
+        this.texture = new Texture(BULLET_IMAGE);
     }
 
     public void renderShootingController() {
@@ -53,6 +57,7 @@ public class ShootingController extends ImageButton {
 
     public void disposeStage() {
         stage.dispose();
+        texture.dispose();
     }
 
     private static Drawable initButtonSkin() {
@@ -65,7 +70,7 @@ public class ShootingController extends ImageButton {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 if (isPressed()) {
-                 bulletArrayList.add(new Bullet());
+                 bulletArrayList.add(new Bullet(texture));
                 }
             }
         });
