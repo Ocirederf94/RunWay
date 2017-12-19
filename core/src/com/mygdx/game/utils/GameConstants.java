@@ -35,4 +35,5 @@ public class GameConstants {
     public static final float GENERAL_SPACING = 15f;
     public static final float BORDER_SPACING = 50f;
     public static final float LASER_LENGTH = 300f;
+    public static final float BULLET_SPEED = 30f;
 }

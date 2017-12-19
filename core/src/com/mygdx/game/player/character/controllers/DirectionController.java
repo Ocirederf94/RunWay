@@ -37,12 +37,13 @@ public class DirectionController extends Touchpad {
         stage.addActor(this);
         stage.act(Gdx.graphics.getDeltaTime());
         this.mainCharacter = mainCharacter;
+
     }
 
     public void renderDirectionController() {
         stage.draw();
-        mainCharacter.getSprite().setRotation(getVector());
-        laserPointer.getSprite().setRotation(getVector());
+        mainCharacter.getSprite().setRotation(getVector().angle());
+        laserPointer.getSprite().setRotation(getVector().angle());
     }
 
     public InputProcessor getInputProcessor() {
@@ -69,7 +70,7 @@ public class DirectionController extends Touchpad {
         return touchpadStyle;
     }
 
-    private float getVector() {
-        return new Vector2(this.getKnobPercentX(), this.getKnobPercentY()).angle();
+    public Vector2 getVector() {
+        return new Vector2(this.getKnobPercentX(), this.getKnobPercentY());
     }
 }

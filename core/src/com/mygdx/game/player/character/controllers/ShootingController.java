@@ -27,9 +27,11 @@ public class ShootingController extends ImageButton {
     private static Drawable drawable;
     private ArrayList<Bullet> bulletArrayList;
     private Texture texture;
+    private DirectionController directionController;
 
     public ShootingController(MovementController movementController, DirectionController directionController) {
         super(initButtonSkin());
+        this.directionController = directionController;
         this.setX(movementController.getWidth() + GameConstants.GENERAL_SPACING);
         this.setY(movementController.getHeight() - (this.getHeight() * GameConstants.FLOAT_ONE_FIVE));
         this.setWidth(Gdx.graphics.getWidth() - ((GameConstants.GENERAL_SPACING
@@ -69,8 +71,8 @@ public class ShootingController extends ImageButton {
         this.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                if (isPressed()) {
-                 bulletArrayList.add(new Bullet(texture));
+                if (isPressed() && directionController.getKnobPercentX() != 0 && directionController.getKnobPercentY() != 0) {
+                 bulletArrayList.add(new Bullet(texture, directionController));
                 }
             }
         });
