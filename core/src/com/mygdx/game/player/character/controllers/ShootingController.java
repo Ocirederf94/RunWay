@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
+import com.mygdx.game.player.character.MainCharacter;
 import com.mygdx.game.player.character.wepons.Bullet;
 import com.mygdx.game.utils.GameConstants;
 
@@ -28,9 +29,11 @@ public class ShootingController extends ImageButton {
     private ArrayList<Bullet> bulletArrayList;
     private Texture texture;
     private DirectionController directionController;
+    private MainCharacter mainCharacter;
 
-    public ShootingController(MovementController movementController, DirectionController directionController) {
+    public ShootingController(MainCharacter mainCharacter, MovementController movementController, DirectionController directionController) {
         super(initButtonSkin());
+        this.mainCharacter = mainCharacter;
         this.directionController = directionController;
         this.setX(movementController.getWidth() + GameConstants.GENERAL_SPACING);
         this.setY(movementController.getHeight() - (this.getHeight() * GameConstants.FLOAT_ONE_FIVE));
@@ -72,7 +75,7 @@ public class ShootingController extends ImageButton {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 if (isPressed() && directionController.getKnobPercentX() != 0 && directionController.getKnobPercentY() != 0) {
-                 bulletArrayList.add(new Bullet(texture, directionController));
+                 bulletArrayList.add(new Bullet(mainCharacter, texture, directionController));
                 }
             }
         });

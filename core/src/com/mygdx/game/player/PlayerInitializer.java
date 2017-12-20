@@ -20,14 +20,12 @@ public class PlayerInitializer {
     private DirectionController directionController;
     private ShootingController shootingController;
     private InputMultiplexer inputMultiplexer;
-    private LaserPointer laserPointer;
 
     public  PlayerInitializer(){
         mainCharacter = new MainCharacter();
-        laserPointer = new LaserPointer();
         movementController = new MovementController();
-        directionController = new DirectionController(mainCharacter, laserPointer);
-        shootingController = new ShootingController(movementController, directionController);
+        directionController = new DirectionController(mainCharacter);
+        shootingController = new ShootingController(mainCharacter, movementController, directionController);
         inputMultiplexer = new InputMultiplexer();
         addInputProcessorsToInputMultiplexer(directionController.getInputProcessor(), movementController.getInputProcessor(), shootingController.getInputProcessor());
         Gdx.input.setInputProcessor(inputMultiplexer);
@@ -42,7 +40,6 @@ public class PlayerInitializer {
         movementController.disposeStage();
         directionController.disposeStage();
         shootingController.disposeStage();
-        laserPointer.disposeLaserPointer();
     }
 
     public MainCharacterCamera getCamera(){
@@ -61,6 +58,5 @@ public class PlayerInitializer {
         movementController.renderMovementController();
         shootingController.renderShootingController();
         movementController.moveMainCharacter(mainCharacter);
-        laserPointer.renderLaserPointer();
     }
 }

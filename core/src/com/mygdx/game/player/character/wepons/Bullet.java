@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
+import com.mygdx.game.player.character.MainCharacter;
 import com.mygdx.game.player.character.controllers.DirectionController;
 
 /**
@@ -19,11 +20,11 @@ public class Bullet {
     private DirectionController directionController;
     float dx, dy , knobX, knobY;
 
-    public Bullet(Texture texture, DirectionController directionController){
+    public Bullet(MainCharacter mainCharacter,Texture texture, DirectionController directionController){
         this.sprite = new Sprite(texture);
         this.spriteBatch = new SpriteBatch();
         this.directionController = directionController;
-        sprite.setPosition(initialX - (texture.getWidth() / 2), initialY - (texture.getHeight() / 2));
+        sprite.setPosition(mainCharacter.getSprite().getX(), mainCharacter.getSprite().getY());
         this.knobX = directionController.getKnobPercentX();
         this.knobY = directionController.getKnobPercentY();
         this.dx = MathUtils.cos(3.1415f / 4);

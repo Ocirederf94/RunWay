@@ -8,7 +8,6 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
 import com.mygdx.game.player.character.MainCharacter;
-import com.mygdx.game.player.character.wepons.LaserPointer;
 import com.mygdx.game.utils.GameConstants;
 
 
@@ -22,15 +21,13 @@ public class DirectionController extends Touchpad {
     private static Skin touchPadSkin;
     private static TouchpadStyle touchpadStyle;
     private InputProcessor inputProcessor;
-    private LaserPointer laserPointer;
     private MainCharacter mainCharacter;
     private float initialX = Gdx.graphics.getWidth() / 2;
     private float initialY = Gdx.graphics.getHeight() / 2;
 
-    public DirectionController(final MainCharacter mainCharacter, LaserPointer laserPointer) {
+    public DirectionController(final MainCharacter mainCharacter) {
         super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
         this.setResetOnTouchUp(false);
-        this.laserPointer = laserPointer;
         this.setX(Gdx.graphics.getWidth() - (this.getWidth() + GameConstants.BORDER_SPACING));
         this.stage = new Stage();
         inputProcessor = stage;
@@ -43,7 +40,6 @@ public class DirectionController extends Touchpad {
     public void renderDirectionController() {
         stage.draw();
         mainCharacter.getSprite().setRotation(getVector().angle());
-        laserPointer.getSprite().setRotation(getVector().angle());
     }
 
     public InputProcessor getInputProcessor() {
