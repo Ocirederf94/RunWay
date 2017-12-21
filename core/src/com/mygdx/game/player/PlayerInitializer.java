@@ -8,7 +8,6 @@ import com.mygdx.game.player.character.MainCharacterCamera;
 import com.mygdx.game.player.character.controllers.DirectionController;
 import com.mygdx.game.player.character.controllers.MovementController;
 import com.mygdx.game.player.character.controllers.ShootingController;
-import com.mygdx.game.player.character.wepons.LaserPointer;
 
 /**
  * Created by fredy on 23/09/2017.
@@ -23,7 +22,7 @@ public class PlayerInitializer {
 
     public  PlayerInitializer(){
         mainCharacter = new MainCharacter();
-        movementController = new MovementController();
+        movementController = new MovementController(mainCharacter);
         directionController = new DirectionController(mainCharacter);
         shootingController = new ShootingController(mainCharacter, movementController, directionController);
         inputMultiplexer = new InputMultiplexer();
@@ -57,6 +56,6 @@ public class PlayerInitializer {
         mainCharacter.renderCharacter();
         movementController.renderMovementController();
         shootingController.renderShootingController();
-        movementController.moveMainCharacter(mainCharacter);
+        movementController.moveMainCharacter();
     }
 }

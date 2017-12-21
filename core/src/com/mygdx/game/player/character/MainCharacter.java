@@ -24,7 +24,7 @@ public class MainCharacter {
         mainCharacterTexture = new Texture(GameConstants.MAIN_CHARACTER_BACKGROUND);
         sprite = new Sprite(mainCharacterTexture);
         spriteBatch = new SpriteBatch();
-        mainCharacterCamera = new MainCharacterCamera();
+        mainCharacterCamera = new MainCharacterCamera(this);
         sprite.setPosition((initialX - mainCharacterTexture.getWidth() / 2), initialY - (mainCharacterTexture.getHeight() / 2));
         mainCharacterCamera.setCameraOnPlayer(initialX, initialY);
     }
