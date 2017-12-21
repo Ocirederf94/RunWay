@@ -18,13 +18,15 @@ public class Bullet {
     private float initialX = Gdx.graphics.getWidth() / 2;
     private float initialY = Gdx.graphics.getHeight() / 2;
     private DirectionController directionController;
-    float dx, dy , knobX, knobY;
+    float dx, dy , knobX, knobY, charSpriteHalfWidth, charSpriteHalfHeight;
 
     public Bullet(MainCharacter mainCharacter,Texture texture, DirectionController directionController){
         this.sprite = new Sprite(texture);
         this.spriteBatch = new SpriteBatch();
         this.directionController = directionController;
-        sprite.setPosition(mainCharacter.getSprite().getX(), mainCharacter.getSprite().getY());
+        this.charSpriteHalfWidth = mainCharacter.getSprite().getWidth() / 2;
+        this.charSpriteHalfHeight = mainCharacter.getSprite().getHeight() / 2;
+        sprite.setPosition(mainCharacter.getSprite().getX() + charSpriteHalfWidth , mainCharacter.getSprite().getY() + charSpriteHalfHeight);
         this.knobX = directionController.getKnobPercentX();
         this.knobY = directionController.getKnobPercentY();
         this.dx = MathUtils.cos(3.1415f / 4);
