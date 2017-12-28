@@ -24,15 +24,12 @@ public class MainCharacterCamera extends OrthographicCamera {
     public void setCameraOnPlayer(float x, float y) {
         this.position.x = x;
         this.position.y = y;
-        this.update();
     }
 
     public void updateCameraOnPlayer() {
-        float palayetXToMiddle = mainCharacter.getSprite().getX() + charSpriteHalfWidth;
-        float palayetYToMiddle = mainCharacter.getSprite().getY() + charSpriteHalfHeight;
-        this.position.x = palayetXToMiddle - totalWidth ;
-        this.position.y = palayetYToMiddle - totalHeight;
+        this.position.set(mainCharacter.getSprite().getX(), mainCharacter.getSprite().getY(), 0);
         this.update();
+        Gdx.app.log("111111 " , this.position.toString() + " X " +  String.valueOf(mainCharacter.getSprite().getX()) + " Y " + String.valueOf(mainCharacter.getSprite().getY()) );
     }
 
 
