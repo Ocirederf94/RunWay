@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
+        jar="D:\Projects\Git\RunWay\android\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1cf4794c28e59480b6f615fe257328cf7201648f">
+        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_da05cb6b0edaecae1caa9f83d2a59411f5da17b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Projects\Git\RunWay\android\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_80b8bc57aecc99471931cd47aeb50759ac934af2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Projects\Git\RunWay\android\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="45e3728ca06a62a8ac38babe681e1bb6600fc07b">
-        <dex dex="D:\Projects\Git\RunWay\android\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_da05cb6b0edaecae1caa9f83d2a59411f5da17b4\classes.dex" />
     </item>
 
 </items>

@@ -11,6 +11,8 @@ import com.mygdx.game.player.character.MainCharacter;
 import com.mygdx.game.player.character.MainCharacterCamera;
 import com.mygdx.game.utils.GameConstants;
 
+import static com.mygdx.game.utils.GameConstants.MOVEMENT_TOUCHPAD_DEADZONE_RADIUS;
+
 /**
  * Created by fredy on 10/09/2017.
  */
@@ -24,7 +26,7 @@ public class MovementController extends Touchpad {
     private MainCharacterCamera mainCharacterCamera;
 
     public MovementController(MainCharacter mainCharacter) {
-        super(GameConstants.MOVEMENT_TOUCHPAD_DEADZONE_RADIUS, setTouchpadStyle());
+        super(MOVEMENT_TOUCHPAD_DEADZONE_RADIUS, setTouchpadStyle());
         this.setX(GameConstants.BORDER_SPACING);
         this.mainCharacter = mainCharacter;
         this.mainCharacterCamera = this.mainCharacter.getMainCharacterCamera();

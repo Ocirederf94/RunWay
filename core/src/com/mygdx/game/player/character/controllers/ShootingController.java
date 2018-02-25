@@ -51,7 +51,7 @@ public class ShootingController extends ImageButton {
 
     public void renderShootingController() {
         stage.draw();
-        for (Bullet bullet : bulletArrayList){
+        for (Bullet bullet : bulletArrayList) {
             bullet.renderBullet();
         }
     }
@@ -75,7 +75,7 @@ public class ShootingController extends ImageButton {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 if (isPressed() && directionController.getKnobPercentX() != 0 && directionController.getKnobPercentY() != 0) {
-                 bulletArrayList.add(new Bullet(mainCharacter, texture, directionController));
+                    bulletArrayList.add(new Bullet(mainCharacter, texture, directionController));
                 }
             }
         });

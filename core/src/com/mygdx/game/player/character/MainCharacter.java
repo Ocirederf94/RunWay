@@ -4,7 +4,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.mygdx.game.utils.GameConstants;
+
+import static com.mygdx.game.utils.GameConstants.MAIN_CHARACTER_BACKGROUND;
 
 
 /**
@@ -21,7 +22,7 @@ public class MainCharacter {
 
 
     public MainCharacter() {
-        mainCharacterTexture = new Texture(GameConstants.MAIN_CHARACTER_BACKGROUND);
+        mainCharacterTexture = new Texture(MAIN_CHARACTER_BACKGROUND);
         sprite = new Sprite(mainCharacterTexture);
         spriteBatch = new SpriteBatch();
         mainCharacterCamera = new MainCharacterCamera(this);

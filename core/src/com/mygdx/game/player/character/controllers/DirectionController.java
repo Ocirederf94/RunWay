@@ -8,8 +8,14 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
 import com.mygdx.game.player.character.MainCharacter;
-import com.mygdx.game.utils.GameConstants;
 
+import static com.mygdx.game.utils.GameConstants.BORDER_SPACING;
+import static com.mygdx.game.utils.GameConstants.DIRECTION_CONTROLLER_SIZE;
+import static com.mygdx.game.utils.GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS;
+import static com.mygdx.game.utils.GameConstants.TOUCHPAD_DIRECTION_BACKGROUND_IMAGE;
+import static com.mygdx.game.utils.GameConstants.TOUCHPAD_DIRECTION__BACKGROUND;
+import static com.mygdx.game.utils.GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND;
+import static com.mygdx.game.utils.GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND_IMAGE;
 
 
 /**
@@ -26,9 +32,11 @@ public class DirectionController extends Touchpad {
     private float initialY = Gdx.graphics.getHeight() / 2;
 
     public DirectionController(final MainCharacter mainCharacter) {
-        super(GameConstants.DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
+        super(DIRECTION_KNOB_DEADZONE_RADIUS, setTouchpadStyle());
         this.setResetOnTouchUp(false);
-        this.setX(Gdx.graphics.getWidth() - (this.getWidth() + GameConstants.BORDER_SPACING));
+        this.setSize(DIRECTION_CONTROLLER_SIZE, DIRECTION_CONTROLLER_SIZE);
+        this.setPosition(Gdx.graphics.getWidth() - (this.getWidth() + BORDER_SPACING), BORDER_SPACING * 4);
+        this.setDeadzone((this.getWidth() / 2) - 1);
         this.stage = new Stage();
         inputProcessor = stage;
         stage.addActor(this);
@@ -57,12 +65,12 @@ public class DirectionController extends Touchpad {
 
     private static TouchpadStyle setTouchpadStyle() {
         touchPadSkin = new Skin();
-        touchPadSkin.add(GameConstants.TOUCHPAD_DIRECTION__BACKGROUND, new Texture(GameConstants.TOUCHPAD_DIRECTION_BACKGROUND_IMAGE));
-        touchPadSkin.add(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND, new Texture(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND_IMAGE));
+        touchPadSkin.add(TOUCHPAD_DIRECTION__BACKGROUND, new Texture(TOUCHPAD_DIRECTION_BACKGROUND_IMAGE));
+        touchPadSkin.add(TOUCHPAD_DIRECTION__KNOB_BACKGROUND, new Texture(TOUCHPAD_DIRECTION__KNOB_BACKGROUND_IMAGE));
 
         touchpadStyle = new TouchpadStyle();
-        touchpadStyle.background = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__BACKGROUND);
-        touchpadStyle.knob = touchPadSkin.getDrawable(GameConstants.TOUCHPAD_DIRECTION__KNOB_BACKGROUND);
+        touchpadStyle.background = touchPadSkin.getDrawable(TOUCHPAD_DIRECTION__BACKGROUND);
+        touchpadStyle.knob = touchPadSkin.getDrawable(TOUCHPAD_DIRECTION__KNOB_BACKGROUND);
         return touchpadStyle;
     }
 

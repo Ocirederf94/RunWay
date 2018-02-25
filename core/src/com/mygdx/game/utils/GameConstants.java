@@ -6,6 +6,7 @@ package com.mygdx.game.utils;
 
 public class GameConstants {
     public static final String MAIN_VIEW_BACKGROUND = "backgorund_images/mainViewBackgorund.png";
+    public static final String WALL_IMAGE = "backgorund_images/wallImage.png";
     public static final String TOUCHPAD_BACKGROUND_IMAGE = "backgorund_images/touchBackground.png";
     public static final String TOUCHPAD_KNOB_BACKGROUND_IMAGE = "backgorund_images/touchKnob.png";
     public static final String TOUCHPAD_DIRECTION_BACKGROUND_IMAGE = "backgorund_images/directionTouchBackground.png";
@@ -14,6 +15,7 @@ public class GameConstants {
     public static final String MAIN_CHARACTER_BACKGROUND = "backgorund_images/characterBackground_Shooting.png";
     public static final String LASER_IMAGE = "backgorund_images/Laser.png";
     public static final String BULLET_IMAGE = "backgorund_images/bulletImage.png";
+
 
     public static final String TOUCHPAD_BACKGROUND = "touchBackground";
     public static final String TOUCHPAD_KNOB_BACKGROUND = "touchKnob";
@@ -35,5 +37,8 @@ public class GameConstants {
     public static final float GENERAL_SPACING = 15f;
     public static final float BORDER_SPACING = 50f;
     public static final float LASER_LENGTH = 300f;
-    public static final float BULLET_SPEED = 30f;
+    public static final float BULLET_SPEED = 10f;
+    public static final float DIRECTION_CONTROLLER_SIZE = 150f;
+    public static final float WALL_SIZR = 100f;
+
 }
